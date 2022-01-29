@@ -1,0 +1,21 @@
+<head>
+    <title>File Decoding Error. Please use UTF-8 encoding.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+  
+  <body>
+    <div class="drop-zone">
+      <span class="drop-zone__prompt">Drop file here or click to upload</span>
+      <form action="/transform" method="post" enctype="multipart/form-data">
+        <input type="file" name="data_file" class="drop-zone__input" accept=".xlsx, .xls, .csv"/>
+    </div>
+    <br>
+    <div class="button1">
+        <input type="submit" />
+        </form>
+    </div>
+  
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>

@@ -1,0 +1,19 @@
+<head>
+    <title>Drag and Drop File Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+  
+  <body>
+    <div class="drop-zone">
+      <span class="drop-zone__prompt">Drop file here or click to upload</span>
+      <form action="/transform" method="post" enctype="multipart/form-data">
+        <input type="file" name="data_file" class="drop-zone__input" accept=".xlsx, .xls, .csv"/>
+    </div>
+    <br>
+        <input type="submit" class="button1" onclick="this.classList.toggle('button1--loading')"/>
+        </form>
+  
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>

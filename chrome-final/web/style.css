@@ -1,0 +1,133 @@
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 3px;
+    font: oblique;
+    font-size: 1.2em;
+}
+
+p {
+    color: black;
+    text-align: center;
+}
+
+h2{
+  padding-top: 5px;
+}
+
+.p {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 3px;
+    font: oblique;
+}
+
+.h1box {
+    background-color: hsl(0, 0%, 0%);
+    position: relative;
+    top: -35px;
+    width: 425px;
+    left: -25px;
+    margin-bottom: 10px;
+}
+
+
+.body {
+    background: #0265b6;
+    height: 315px;
+    width: 375px;
+    max-width: 375px;
+    border: none;
+  }
+
+.navMenu {
+  position: relative;
+  margin-top: 10px;
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline;
+  margin-right: 9px;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu b {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.0em;
+    font-weight: 500;
+    display: inline;
+    margin-right: 55px;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+.logo {
+    position: relative;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.submitButton {
+    width: 75px;
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.emailInput {
+  text-align: center;
+  width: 50%;
+  height: 30px;
+  border: 1px;
+  border-radius: 5px;
+}
+
+.formDiv {
+  padding-top: 3px;
+  margin-top: 5px;
+  margin-bottom: -33px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+
+.resultBox{
+  position: relative;
+  top: -35px;
+  border: 5px;
+  border-color: yellow;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  background-color: whitesmoke;
+  margin-bottom: 25px;
+}
+.result111{
+  color: black;
+}
+
+.result222{
+  color: black;
+}

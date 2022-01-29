@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title>Continue or Download?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    </head>
+            <body>
+                <div class="loopbackground">
+                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="another1">
+                            <form action="/another" method="post" enctype="multipart/form-data">
+                                <input type="submit" value="Test 100 More" class="button" onclick="this.classList.toggle('button--loading')"></form>
+                            </div>
+                        <br>
+                        <div class="finish1">
+                            <form action="/finish" method="post" enctype="multipart/form-data">
+                                <input type="submit" value="Download" class="button"></form>
+                            </div>
+                        <br>
+                        <div class="restart1">
+                        <form action="/restart" method="post" enctype="multipart/form-data">
+                            <input type="submit" value="New File" class="button"></form>
+                            </div>
+                </div>
+            </body>
+
+</html>

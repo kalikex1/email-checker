@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Verify any Email Address</title>
+        <link rel="stylesheet" href="/web/style.css">
+        <script src="../background.js"></script>
+        <nav class="navMenu">
+            <img src="/images/yes.png" class="logo"></img>
+            <b>Free Email Checker</b>
+            <a href="/web/popup.html">Home</a>
+            <a href="https://rapidapi.com/emailcheckerfree/api/free-email-verification" target="_newtab">Bulk</a>
+            <a href="https://rapidapi.com/emailcheckerfree/api/free-email-verification" target="_newtab">Unlimited</a>
+        </nav>
+    </head>
+    <hr>
+    <body class="body" >
+        <h1>Stay out of the spam folder. Verify your contact lists.</h1>
+        <br>
+        <div class="formDiv">
+            <form class="single-form" onsu;>
+                <input type="email" class="emailInput" id='email1'>
+                <button type="button" class="submitButton" onclick="verifyEmail(document.getElementById('email1').value)">Submit</button>
+            </form>
+        </div>
+        <div class="resultBox">
+                <h2 class="results11" id="Result"></h2>
+                <p class="result22" id="Input"></p><p class="result22" id="Reason"></p>
+                <p class="result22" id="Domain"></p>
+                <p class="result22" id="Disposable"></p>
+                <p class="result22" id="MX_Server"></p>
+                <p class="result22" id="SMTP_Code"></p>
+        </div>
+    </body>
+  </html>
