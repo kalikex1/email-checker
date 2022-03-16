@@ -3,36 +3,6 @@
 
 let apiURL = "https://aaront612.pythonanywhere.com/multi/"
 
-// let obj = {
-//     'Result': 'Submit email to test',
-//     'Input': 'Submit email to test',
-//     'Reason': 'Submit email to test',
-//     'Domain': 'Submit email to test',
-//     'Disposable': 'Submit email to test',
-//     'MX_Server': 'Submit email to test',
-//     'SMTP_Code': 'Submit email to test',
-// }
-// let obj = {
-//     'Result': 'Submit email to test',
-//     'Input': 'Submit email to test',
-//     'Reason': 'Submit email to test',
-//     'Domain': 'Submit email to test',
-//     'Disposable': 'Submit email to test',
-//     'MX_Server': 'Submit email to test',
-//     'SMTP_Code': 'Submit email to test',
-// }
-
-// function load(){
-//     for (keys in obj){
-//         if (keys === 'Result') {
-//             document.getElementById(keys).innerHTML = (obj[keys])
-//         } else {
-//             document.getElementById(keys).innerHTML = (keys + '  -     ' + obj[keys])
-//         }
-//     }
-// }
-
-
 async function verifyEmail(email){
 //let res
     await fetch(apiURL+email,{
@@ -58,5 +28,14 @@ async function verifyEmail(email){
         }
     })
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    //let tester = document.getElementById('email1').value;
+    //let link = document.getElementById('go')
+    // onClick's logic below:
+    document.getElementById('go').addEventListener('click', verifyEmail(document.getElementById('email1').value));
+});
+
+
 
 //verifyEmail('aaront612@gmail.com')

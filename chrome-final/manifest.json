@@ -22,8 +22,6 @@
         "128": "./images/yes.png"
     },
     "permissions": [
-        "downloads",
-        "tabs",
         "background",
         "https://aaront612.pythonanywhere.com/"
     ]
