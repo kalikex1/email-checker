@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Email Verification</title>
+    <link rel="stylesheet" href="./bootstrap-styles/css/bootstrap.css">
+    <link rel="stylesheet" href="./style1.css">
+    <script src="./index.js" type="module"></script>
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img class="bi me-2" width="30" height="30" role="img" aria-label="Bootstrap" src="/content/yes.png"></img>
+                    <span class="fs-4">Free Email Checker</span>
+                </a>
+    
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-md-center mb-md-0 text-end">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+    
+    
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+            <div class="col-md-10 p-lg-10 mx-auto my-10">
+                <h1 class="display-4 fw-normal">Verify Any Email Address For Deliverability</h1>
+                <p class="lead fw-normal">The Easiest Way To Ping Email Addresses For Validity</p>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Single</strong>
+                        <!-- <h3 class="mb-0">Single Verification</h3> -->
+                        <div style="padding: 15px;">
+                            <form class="single-form" onsu;>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" placeholder="Recipient's Email Address"
+                                        aria-label="Recipient's username" aria-describedby="button-addon2" id='toTest'>
+                                    <button class="btn btn-outline-secondary" type="button" id="single-submit">Submit</button>
+                                </div>
+                            </form>
+                            <div class="alert alert-dark" role="alert" style="text-align: center;">
+                                <h2 class="results11" id="Result"></h2>
+                                <p class="result22" id="input-res"></p>
+                                <p class="result22" id="output2">Results will appear here !</p>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Bulk</strong>
+                        <form>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+        
+    </body>
+    
+    </html>

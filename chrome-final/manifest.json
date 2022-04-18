@@ -1,7 +1,7 @@
 {
     "name": "Free Email Checker",
     "description": "Verify any email address while on the go with this convenient extension",
-    "version": "1.1",
+    "version": "1.2",
     "manifest_version": 3,
     "background":{
         "service_worker": "background.js"
@@ -22,7 +22,6 @@
         "128": "./images/yes.png"
     },
     "permissions": [
-        "background",
         "https://aaront612.pythonanywhere.com/"
     ]
 }

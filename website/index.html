@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Email Verification</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -39,34 +40,84 @@
         <section class="section1">
             <div class="section1-1">
                 <h1>Verify Any Email Address For Deliverability</h1>
-                <p>Stay out of the spam folder & verify your email lists today, for free. Input any email address below or upload a file for free bulk verification.</p>
+                <p>Stay out of the spam folder & verify your email lists today, for free. Input any email address below or upload a file for easy bulk verification.</p>
                 <div class="single-verifier-div">
                     <form class="form1">
-                        <input type="email" placeholder="Type in an address..." class="input1">
-                        <input type="submit" class="input2">
+                        <input type="email" placeholder="Email Address" class="input1" id="toTest">
+                        <input type="submit" class="input2" id="single-submit">
                     </form>
+                    <p class="results-below-text">Results will appear below</p>
+                    <hr class="hr1">
+                    <div class="results-div">
+                        <img class="result-img" id="result-img"></img>
+                        <div>
+                            <p id="output1"></p>
+                            <p id="output2"></p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section1-2">
-                <h1>HI</h1>
+                <h2>Bulk Verification</h2>
+                <p>Upload a file below for free & easy bulk verification</p>
+                <form class="drag-drop">
+                    <div class="drag">
+                        <p style="color: black;">Drag or Click Here...</p>
+                        <input type="file" class="file-upload">
+                    </div>
+                    <br>
+                    <input type="submit" class="input2">
+                </form>
             </div>
             
         </section>
 
         <section class="section2">
-            <div>
-                <h1>HI</h1>
+            <div class="lowerDiv">
+                <h3 class="lowerH3">The Easiest Way To Ping Email Address For Validity</h3>
+                <p class="lowerP">Our free tool allows you to ping an email address and server. Resulting in a higher chances of deliverability. Our email verification service is crucial to follow email deliverability best practices. Lower your bounce rate and remove hard or soft bounce codes from salesforce. When you ping an email address for validity you are ensuring an email will deliver. Be sure to check out our API and chrome extension as well.</p>
+                
+                <h3 class="lowerH3">Why Is Email Deliverability Important?</h3>
+                <p class="lowerP">Email deliverability is important to ensure your campaigns do not end up in the spam folder. By following the bounce
+                rate formula above, you can see where you stand. Anything above 3% should receive attention. Maintaining a healthy
+                domain reputation will help you in the long run as you grow. Think of it as your credit score online. Ping email
+                addresses and use the best practices to guarantee better marketing results.</p>
+            
             </div>
-            <div>
-                <h1>HI</h1>
-            </div>
+           
 
         </section>
 
     </div>
 
     <div class="footer">
+        <div class="foot">
 
+            <div class="innerFoot">
+                <h4>About EmailCheckerFree.Com</h4>
+                <p>
+                    Looking to verify or check if an email is valid? Our free Chrome Extension makes it easier than ever before.
+                    www.emailcheckerfree.com was created to easily verify and clean your email lists without the pain of limits and monthly
+                    subscriptions. Thanks for visiting !
+                </p>
+            </div>
+            <div class="innerFoot2">
+                <ul class="bottomLi">
+                    <li>
+                        <img src="./content/pngpng.png" class="listCheck">
+                        <p>Verify any Email Address !</p>
+                    </li>
+                    <li>
+                        <img src="./content/pngpng.png" class="listCheck">
+                        <p>Chrome Extension to use on the go !</p>
+                    </li>
+                    <li>
+                        <img src="./content/pngpng.png" class="listCheck">
+                        <p>Free API Access !</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     
 </body>

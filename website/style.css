@@ -1,5 +1,6 @@
 header{
     display: flex;
+    top: 0;
     background-color: #2847A6;
     width: 100%;
     height: 4.2rem;
@@ -11,15 +12,19 @@ header{
 }
 
 body{
-    background-color:rgb(237, 237, 237)
+    /* position: relative; */
+    background-color:rgb(237, 237, 237);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 /* body tag class */
 
 #header-logo{
     width: 2.2rem;
     height: 2.2rem;
 }
+
 #header-brand:hover{
     font-size: 1.25rem;
 }
@@ -166,7 +171,8 @@ ul li ul li > a {
 }
 
 ul li ul li > a:hover {
-    color: #2847A6;
+    /* color: #2847A6; */
+    color: orange;
 
 }
 
@@ -222,56 +228,110 @@ ul li ul li > a:hover {
 
 .single-verifier-div{
     width: 95%;
-    height: 100%;
+    height: 13rem;
     background-color: whitesmoke;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    /* border-top-left-radius: 7px;
+    border-top-right-radius: 7px; */
+    border-radius: 7px;
 }
 
 .form1{
     margin-top: 1rem;
 }
 
-.input1{
-    box-sizing: border-box;
-    width: 75%;
-    height: 1.8rem;
-    text-align: center;
-    border: solid black 1px;
-    border-radius: 0px;
-    font-size: 14pt;
-    font-family: sans-serif;
+.input1 {
+    width: 40%;
+    border: solid orange 1px;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
     color: black;
-
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
 }
 
-.input2{
-    box-sizing: border-box;
-    height: 1.8rem;
-    text-align: center;
-    border: solid black 1px;
-    border-radius: 0px;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
+.input2 {
+    border: solid orange 1px;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
     color: black;
-    background-color: aliceblue;
+    box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
 }
 
+.input2:hover{
+    cursor: pointer;
+    background-color: orange;
+    /* transform: translate(0px,-2px); */
+}
 
+.results-below-text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;
+}
+.hr1{
+    width: 90%;
+    border-top: solid black 1px;
+}
 
+.results-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.result-img{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    display:none;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11pt;
+}
 .section1-2{
     width: 39%;
     height: 80%;
-    background-color: #839FF2;
+    background-color: #1C3173;
     border-radius: 7px;
-    border: solid #1C3173 1px
+    border: solid whitesmoke 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.drag{
+    width: 15rem;
+    height: 10rem;
+    border: dashed black 2px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+}
+
+
+.file-upload{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    color: black;
+}
+
+.file-upload:focus{
+    opacity: 100;
 }
 
 .section2{
     display: flex;
     width: 85%;
     margin-top: 2rem;
-    height: 50rem;
+    height: 30rem;
     background-color: #2847A6;
     border-radius: 7px;
     flex-direction: row;
@@ -280,12 +340,35 @@ ul li ul li > a:hover {
     box-shadow: 0px 0px 3px 2px rgb(190, 190, 190);
 }
 
+.lowerDiv{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: solid whitesmoke 2px;
+    border-radius: 7px;
+    background-color: #2856a6;
+    color: whitesmoke;
+}
+
+.lowerH3{
+    font-size: 1.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lowerP{
+    width: 80%;
+    text-align: center;
+}
 
 /* foooter */
 
 .footer{
     box-sizing: border-box;
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 2rem;
     width: 100%;
@@ -296,6 +379,82 @@ ul li ul li > a:hover {
     box-shadow: 0px 0px 3px 2px rgb(190, 190, 190);
 
 }
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 80%;
+    border: solid whitesmoke 1px;
+    border-radius: 7px;
+    color: whitesmoke;
+    margin-right: 2rem;
+}
+
+.innerFoot{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 80%;
+    border-radius: 7px;
+    color: whitesmoke;
+    margin-right: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.innerFoot2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 80%;
+    /* border: solid whitesmoke 1px; */
+    border-radius: 7px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+
+}
+
+.listCheck{
+    width: 2rem;
+    height: 2rem;
+}
+
+.bottomLi > li > p {
+    font-size: 0.7rem;
+    padding-left: 1.5rem;
+}
+
+.bottomLi > li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem;
+    border-radius: 7px;
+    transition: all 0.5s;
+
+}
+
+.bottomLi > li:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 0.7rem;
+    background-color: #2847A6;
+    cursor: default;
+
+}
+
+p:hover{
+    cursor:default;
+}
+
+
 
 
 /* media queries  ---- screen scizes  */

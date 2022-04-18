@@ -2,32 +2,50 @@
     <head>
         <title>Verify any Email Address</title>
         <link rel="stylesheet" href="/web/style.css">
+        <link rel="stylesheet" href="./bootstrap-styles/css/bootstrap.css">
         <script src="../background.js"></script>
-        <nav class="navMenu">
-            <img src="/images/yes.png" class="logo"></img>
-            <b>Free Email Checker</b>
-            <a href="/web/popup.html">Home</a>
-            <a href="https://rapidapi.com/emailcheckerfree/api/free-email-verification" target="_newtab">Bulk</a>
-            <a href="https://rapidapi.com/emailcheckerfree/api/free-email-verification" target="_newtab">Unlimited</a>
-        </nav>
     </head>
-    <hr>
-    <body class="body" >
-        <h1>Stay out of the spam folder. Verify your contact lists.</h1>
-        <br>
-        <div class="formDiv">
+    <body style="width: 400px; background-color: cyan-200; text-align: center;">
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./popup.html">
+                        <img src="/images/yes.png" alt="" width="20" height="20" class="d-inline-block align-text-top">
+                        Free Email Checker
+                    </a>
+                    <a class="btn btn-outline-warning" href="#">Go Premium</a>
+                </div>
+            </nav>
+        </header>
+        <div class="alert alert-warning" role="alert">
+            Stay out of the spam folder. Verify your contacts.
+        </div>
+        <div style="padding: 15px;">
             <form class="single-form" onsu;>
-                <input type="email" class="emailInput" id='email1'>
-                <button type="button" class="submitButton" id="go" onclick="verifyEmail(document.getElementById('email1').value)">Submit</button>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Recipient's Email Address" aria-label="Recipient's username"
+                        aria-describedby="button-addon2" id='toTest'>
+                    <button class="btn btn-outline-secondary" type="button" id="single-submit">Submit</button>
+                </div>
             </form>
-        </div>
-        <div class="resultBox">
+            <div class="alert alert-dark" role="alert" style="text-align: center;">
                 <h2 class="results11" id="Result"></h2>
-                <p class="result22" id="Input"></p><p class="result22" id="Reason"></p>
-                <p class="result22" id="Domain"></p>
-                <p class="result22" id="Disposable"></p>
-                <p class="result22" id="MX_Server"></p>
-                <p class="result22" id="SMTP_Code"></p>
+                <p class="result22" id="input-res"></p>
+                <p class="result22" id="output2">Results will appear here !</p>
+            </div>
         </div>
+        <!-- <div class="alert bg-dark" style="height: 50px;">
+            <h6 style="color: white;">File Upload</h6>
+        </div>
+        <p id="bottomP">Upload a .csv file for bulk verification.</p>
+        <form>
+            <input type="file" class="custom-file-input" id="file1" accept=".csv">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+        </form>
+        <button type="button" class="submitButton" id="filesub">Submit</button>
+        <div class="upload-btn-wrapper">
+            <button class="btn">Upload a file</button>
+            <input type="file" name="myfile" />
+        </div> -->
     </body>
   </html>
