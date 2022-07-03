@@ -1,0 +1,30 @@
+{
+  "name": "Free Email Checker",
+  "description": "Verify any email address while on the go with this convenient extension",
+  "version": "1.2",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.JPG",
+      "32": "icon.JPG",
+      "48": "icon.JPG",
+      "128": "icon.JPG"
+    },
+    "default_title": "Free Email Checker"
+  },
+  "icons": {
+    "16": "icon.JPG",
+    "32": "icon.JPG",
+    "48": "icon.JPG",
+    "128": "icon.JPG"
+  },
+  "permissions": [
+    "scripting",
+    "https://aaront612.pythonanywhere.com/"
+  ],
+  "host_permissions": [
+    "https://*/",
+    "http://*/"
+  ]
+}
