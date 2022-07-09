@@ -1,0 +1,5 @@
+.container{
+    border: solid whitesmoke 1px;
+    display: flex;
+    flex-direction: column;
+}

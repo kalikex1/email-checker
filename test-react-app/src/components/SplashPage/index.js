@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import FileUpload from '../FileUpload';
 import './SplashPage.css'
 
 function SplashPage() {
@@ -50,7 +51,7 @@ function SplashPage() {
             {/*  */}
 
             <div className='mainBottom'>
-
+                <FileUpload />
             </div>
 
         </div>
