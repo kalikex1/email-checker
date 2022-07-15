@@ -8,6 +8,32 @@
 }
 
 
+.singleBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid black 2px;
+    color: whitesmoke;
+    width: 90%;
+    height: 100px;
+    border-radius: 3px;
+}
+
+.singleBox > *{
+    margin: 5px;
+    padding: 0px;
+    font-size: 11pt;
+}
+
+.valid{
+    color: green;
+}
+
+.invalid{
+    color: red;
+}
+
+
 /* TOP SECTION */
 .mainTop{
     display: flex;
@@ -21,7 +47,7 @@
 
 .mainTop > div {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
 }
@@ -99,6 +125,7 @@
     width: 200px;
     outline: none;
     font-size: 14px;
+    color: whitesmoke;
 }
 
 .custom-field .placeholder {

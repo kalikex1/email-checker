@@ -9,6 +9,8 @@ function SplashPage() {
 
     const [singleLoaded, setSingleLoaded] = useState(true)
 
+    const [resultClass, setResultClass] = useState('test')
+
     async function singleSubmit(){
         const result = await fetch(`https://aaront612.pythonanywhere.com/multi/${singleInput}`, { method: 'GET' })
             .then(response => response.json())
@@ -22,6 +24,11 @@ function SplashPage() {
 
     useEffect(() => {
         console.log(singleResult)
+        if (singleResult.Result === 'Invalid'){
+            setResultClass('invalid')
+        }else{
+            setResultClass('valid')
+        }
     }, [singleResult])
     
 
@@ -43,8 +50,10 @@ function SplashPage() {
 
                     <div onClick={singleSubmit}>Verify</div>
                 </div>
-                <div>
-                    result function here
+                <div className='singleBox'>
+                    <h4 className={resultClass}>{singleResult?.Input}: {singleResult?.Result}</h4>
+                    <p>Reason: {singleResult?.Reason}</p>
+                    <p>Code Received: {singleResult?.SMTP_Code}</p>
                 </div>
             </div>
 
