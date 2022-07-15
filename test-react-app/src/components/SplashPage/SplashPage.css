@@ -87,10 +87,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     height: 245px;
     width: 100%;
     /* border-bottom: solid white 1px; */
+}
+
+.mainBottom > h4{
+    color: whitesmoke;
+    background-color: black;
+    border: solid whitesmoke 2px;
+    padding: 4px;
+    border-radius: 5px;
 }
 
 /* .mainBottom>div {

@@ -60,6 +60,7 @@ function SplashPage() {
             {/*  */}
 
             <div className='mainBottom'>
+                <h4>File Upload</h4>
                 <FileUpload />
             </div>
 
