@@ -14,13 +14,14 @@ body{
 .navBar{
     width: 100%;
     height: 50px;
-    border-bottom: solid black 1px;
-    background-color: rgb(39, 39, 39);
+    /* border-bottom: solid #be74ff 1px; */
+    /* background-color: rgb(39, 39, 39); */
+    background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: whitesmoke;
+    color: black;
 }
 
 /* left and right nav divs */
@@ -39,7 +40,7 @@ body{
 }
 
 .navLeft > img {
-    width: 25px;
+    width: 20px;
     margin-right: 7px;
     cursor: pointer;
 }
@@ -48,12 +49,22 @@ body{
     width: 30px;
     margin: 2px;
     cursor: pointer;
+    border-radius: 7px;
 }
 
 .shareHolder>img:hover {
     transform: translateY(1px);
+    box-shadow: 0px 0px 1px 1px lightgrey;
 }
 
+.navLeft{
+    border: solid #be74ff 1px;
+    background-color: white;
+    /* background-color: whitesmoke; */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px lightgrey;
+}
 
 
 
@@ -68,4 +79,36 @@ body{
     justify-content: center;
     background-color: rgb(93, 93, 93);
     color: whitesmoke;
+}
+
+.footer{
+    box-sizing: border-box;
+    border-top: solid lightgrey 1px;
+    height: 30px;
+    background-color: white;
+}
+
+.pageSelector{
+    height: 30px;
+    /* width: 100%; */
+    /* box-shadow: 0px 1px 1px 0px lightgray; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: solid lightgrey 1px;
+    flex-direction: row;
+    color: black;
+    border-top: solid #a15fda 1px;
+}
+
+.pageSelector>*:hover{
+    color: #a15fda;
+    cursor: pointer;
+}
+
+.Selected{
+    color: #a15fda;
 }

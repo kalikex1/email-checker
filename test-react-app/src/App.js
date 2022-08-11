@@ -15,6 +15,15 @@ import email from './images/email.png'
 
 
 function App() {
+
+  const [selected, setSelected] = useState(1)
+
+  function reactiveMenuStyle(selectedTab){
+    if(selected === selectedTab) return 'Selected'
+    if (selected === selectedTab) return 'Selected'
+    if (selected === selectedTab) return 'Selected'
+
+  }
   
 
   return (
@@ -22,7 +31,7 @@ function App() {
             <div className="navBar">
               <div className="navLeft">
                 <img src={logo} alt=""></img>
-                <h4>Free Email Checker</h4>
+                <h4>Contact Hero</h4>
               </div>
               <div className="navRight">
                 <h5>Share: </h5>
@@ -34,7 +43,17 @@ function App() {
                 </div>
               </div>
             </div>
-            < SplashPage />
+            <div className="pageSelector">
+              <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Email Verification</h5>
+              <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5>
+              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>LinkedIn Apply</h5>
+            </div>
+            {selected === 1 && (
+              < SplashPage />
+            )}
+            <div className="footer">
+
+            </div>
     </>
   );
 }

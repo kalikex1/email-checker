@@ -1,19 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import './FileUpload.css'
 
 function FileUpload(props) {
+    const [uploaded, setUploaded] = useState({})
+
+    function handleFilter(){
+
+    }
 
     return (
+        <>
+        <input type="file" accept='.csv' />
+        <p className='filterButton'>Filter Contacts</p>
         <div className='fileUploadWrap'>
-            
+
             <section className="container">
 
-                <form action="upload.php" method="POST">
-                    <input type="file" multiple />
-                        <p>Drag your files here or click in this area.</p>
-                        <button type="submit">Upload</button>
-                </form>
+
 
             </section>
 
@@ -22,6 +26,7 @@ function FileUpload(props) {
             </div>
 
         </div>
+        </>
     );
 }
 

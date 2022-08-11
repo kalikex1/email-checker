@@ -53,7 +53,6 @@ function SplashPage() {
                 <div className='singleBox'>
                     <h4 className={resultClass}>{singleResult?.Input}: {singleResult?.Result}</h4>
                     <p>Reason: {singleResult?.Reason}</p>
-                    <p>Code Received: {singleResult?.SMTP_Code}</p>
                 </div>
             </div>
 
