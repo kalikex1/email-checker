@@ -10,6 +10,8 @@ import fb from './images/fb.png'
 import tw from './images/twitter.png'
 import linkedin from './images/linkedin.png'
 import email from './images/email.png'
+import UrlScraper from "./components/UrlScraper";
+import LinkedInApply from "./components/LinkedInApply";
 
 
 
@@ -50,6 +52,12 @@ function App() {
             </div>
             {selected === 1 && (
               < SplashPage />
+            )}
+            {selected === 2 && (
+              < UrlScraper />
+            )}
+            {selected === 3 && (
+              < LinkedInApply />
             )}
             <div className="footer">
 
