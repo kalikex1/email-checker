@@ -10,6 +10,7 @@ function FileUpload(props) {
 
     const hiddenFileInput = React.useRef(null)
     const hiddenFileDownload = React.useRef(null)
+    const link = document.getElementById('link')
 
     function handleFilter(){
 
@@ -33,13 +34,18 @@ function FileUpload(props) {
     }
 
     function handleDownload(){
+        let objectURL = URL.createObjectURL(uploaded?.file)
+
+        link.download = 'clean-'+uploaded?.fName
+        link.href = objectURL
+
         hiddenFileDownload.current.click()
     }
 
     return (
         <>
         <input type="file" accept='.csv' onChange={(e)=> handleChange(e)} ref={hiddenFileInput} style={{display:'none'}}/>
-        <a href={uploaded?.file} style={{display:'none'}} download='cleanFile' ref={hiddenFileDownload}></a>
+        <a href={uploaded?.file}  id='link' style={{display:'none'}} ref={hiddenFileDownload}></a>
         <div className='fileUploadWrap'>
 
             <div className="dirtyContainer" onClick={(e)=> handleClick(e)}>
