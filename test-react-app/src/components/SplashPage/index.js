@@ -41,7 +41,8 @@ function SplashPage() {
 
     return (
         <div className='sHolder'>
-            <div className='mainTop'>
+            {/* <div className='mainTop'> */}
+            <div className='singleBox'>
                 <div>
                     <label className="custom-field one">
                         <input type="email" placeholder=" " onChange={(e) => { setSingleInput(e.target.value) }} />
@@ -50,11 +51,10 @@ function SplashPage() {
 
                     <div onClick={singleSubmit}>Verify</div>
                 </div>
-                <div className='singleBox'>
                     <h4 className={resultClass}>{singleResult?.Input}: {singleResult?.Result}</h4>
                     <p>Reason: {singleResult?.Reason}</p>
-                </div>
             </div>
+            {/* </div> */}
 
             {/*  */}
 

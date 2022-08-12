@@ -11,7 +11,7 @@ function FileUpload(props) {
 
     return (
         <>
-        <input type="file" accept='.csv' />
+        {/* <input type="file" accept='.csv' />
         <p className='filterButton'>Filter Contacts</p>
         <div className='fileUploadWrap'>
 
@@ -25,7 +25,7 @@ function FileUpload(props) {
 
             </div>
 
-        </div>
+        </div> */}
         </>
     );
 }

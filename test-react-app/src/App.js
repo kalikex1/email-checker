@@ -31,22 +31,22 @@ function App() {
   return (
     <>
             <div className="navBar">
-              <div className="navLeft">
+              <div className="navLeft" onClick={() => { window.open("https://contacthero.tech", '_blank') }}>
                 <img src={logo} alt=""></img>
                 <h4>Contact Hero</h4>
               </div>
               <div className="navRight">
                 <h5>Share: </h5>
                 <div className="shareHolder">
-                  <img onClick={(e) => {}} src={fb} alt="fb"/>
-                  <img onClick={(e) => {}} src={tw} alt="tw"/>
-                  <img onClick={(e) => {}} src={linkedin} alt="linkedin"/>
-                  <img onClick={(e) => {}} src={email} alt="email"/>
+                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={fb} alt="fb"/>
+                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={tw} alt="tw"/>
+                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={linkedin} alt="linkedin"/>
+                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={email} alt="email"/>
                 </div>
               </div>
             </div>
             <div className="pageSelector">
-              <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Email Verification</h5>
+              <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Verification</h5>
               <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5>
               <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>LinkedIn Apply</h5>
             </div>
@@ -59,9 +59,9 @@ function App() {
             {selected === 3 && (
               < LinkedInApply />
             )}
-            <div className="footer">
+            {/* <div className="footer">
 
-            </div>
+            </div> */}
     </>
   );
 }
