@@ -52,6 +52,20 @@ def domainapi(uuid):
         'MX_Record' : domaincheck.mxRecord ,
         },)
         
+@app.route("/phone/<uuid>", methods=['GET'])
+def phone(uuid):
+    response = make_response()
+    response.headers.add("Access-Control-Allow-Origin", "*")
+    response.headers.add("Access-Control-Allow-Headers", "*")
+    response.headers.add("Access-Control-Allow-Methods", "*")
+
+    phoneResult = domaincheck.phone_verify(uuid)
+
+    return jsonify({
+        'Input' : uuid ,
+        'Result' : phoneResult['Result'] ,
+        'Carrier' : phoneResult['Carrier']
+        },)
 
 if __name__ == "__main__":
     app.run(debug=True)

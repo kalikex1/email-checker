@@ -1,0 +1,37 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "9e297248d32d4a2b1f552e4a1a489374d0023b3ddce7621966f8f7cd28816da2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.9"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "dnspython": {
+            "hashes": [
+                "sha256:0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e",
+                "sha256:a851e51367fb93e9e1361732c1d60dab63eff98712e503ea7d92e6eccb109b4f"
+            ],
+            "index": "pypi",
+            "version": "==2.2.1"
+        },
+        "phonenumbers": {
+            "hashes": [
+                "sha256:b945c1410d52448bb560a869e0a77af343422c96da55efbb2a44c5da38df299a",
+                "sha256:ebad336027f008eed8f2fe571ecb20c574c9c52f68b85ed2e2a2519d92ed318d"
+            ],
+            "index": "pypi",
+            "version": "==8.12.53"
+        }
+    },
+    "develop": {}
+}

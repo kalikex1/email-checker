@@ -3,6 +3,8 @@ import smtplib
 import dns.resolver
 import csv
 
+
+
 def email_verify(e):
 
     global reason
