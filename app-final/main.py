@@ -6,7 +6,10 @@ from werkzeug.datastructures import ResponseCacheControl
 import backend
 import domaincheck
 
+from flask_cors import CORS, cross_origin
+
 app = Flask(__name__)
+CORS(app)
 app.config['JSON_SORT_KEYS'] = False
 
 @app.route("/home", methods = ["GET", "POST"])

@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import FileUpload from '../FileUpload';
 import './SplashPage.css'
 
+import Input from 'react-phone-number-input/input'
+import 'react-phone-number-input/style.css'
+
 function SplashPage() {
     const [singleInput, setSingleInput] = useState('')
     const [loaded, setLoaded] = useState(false)
@@ -10,6 +13,8 @@ function SplashPage() {
     const [singleLoaded, setSingleLoaded] = useState(true)
 
     const [resultClass, setResultClass] = useState('test')
+
+    // EMAIL FUNCTIONS
 
     async function singleSubmit(e){
         e.preventDefault()
@@ -33,11 +38,35 @@ function SplashPage() {
     }, [singleResult])
     
 
-    // if (!loaded) return (
-    //     <div className='loader'>
-    //         <h1>Loading...</h1>
-    //     </div>
-    // )
+    // PHONE FUNCTIONS
+ 
+
+    const [value, setValue] = useState('')
+    const [valueResult, setValueResult] = useState({})
+
+    const [phoneResultClass, setPhoneResultClass] = useState('test')
+
+    async function phoneSubmit(e) {
+        e.preventDefault()
+
+        const test = value.slice(2)
+
+        const result = await fetch(`https://aaront612.pythonanywhere.com/phone/${test}`, { method: 'GET' })
+            .then(response => response.json())
+            .then(data => { return data })
+        await setValueResult(await result)
+    }
+
+    useEffect(() => {
+        console.log(valueResult)
+        if (valueResult.Result === 'Invalid') {
+            setPhoneResultClass('invalid')
+        } else if (valueResult.Result === 'Valid') {
+            setPhoneResultClass('valid')
+        }
+    }, [valueResult])
+
+
 
 
     return (
@@ -62,15 +91,24 @@ function SplashPage() {
                 </div>
                 <div className='phoneBox'>
                     <div className='pInput'>
-                        <form onSubmit={(e) => singleSubmit(e)}>
-                            <input type="tel" placeholder="Phone Number" onChange={(e) => { setSingleInput(e.target.value) }} />
-                            {/* <div onClick={()=> singleSubmit(e)}>Verify</div> */}
+                        <form onSubmit={(e)=>{e.preventDefault();phoneSubmit(e)}}>
+                            <img></img>
+                            <Input 
+                                international
+                                withCountryCallingCode
+                                countryCallingCodeEditable={false}
+                                placeholder='US Phone Number Only'
+                                defaultCountry="US"
+                                // country='US'
+                                value={value}
+                                onChange={setValue}
+                            />
                             <button type='submit'>Verify</button>
                         </form>
                     </div>
                     <div className='pResults'>
-                        <p className={resultClass}>{singleResult?.Result ? singleResult?.Input + ' : ' + singleResult?.Result : 'Phone - Test For Results'}</p>
-                        <p>Phone Carrier: {singleResult?.Reason ? singleResult?.Reason : 'N/A'}</p>
+                        <p className={phoneResultClass}>{valueResult?.Result ? valueResult?.Input + ' : ' + valueResult?.Result : 'Phone - Test For Results'}</p>
+                        <p>Phone Carrier: {valueResult?.Carrier ? valueResult?.Carrier : 'N/A'}</p>
                     </div>
                 </div>
             </div>
