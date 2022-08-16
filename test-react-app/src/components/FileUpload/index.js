@@ -28,6 +28,7 @@ function FileUpload(props) {
     }
 
     async function handleFilter(){
+        if (uploaded.file === undefined) return
 
         setLoading(true)
 
@@ -54,7 +55,6 @@ function FileUpload(props) {
                         }
                     }
                 }
-                // console.log(cleanArr)
                 const newF = await Papa.unparse(cleanArr)
 
                 let csvData = new Blob([newF], {type: 'text/csv;charset=utf-8;'})
@@ -62,10 +62,6 @@ function FileUpload(props) {
                 link.download = 'clean-'+uploaded.fName
                 link.href = csvURL
                 hiddenFileDownload.current.click()
-                // await setCleanFile({
-                //     file: await Papa.unparse(cleanArr),
-                //     fName: `clean-${uploaded?.fName}`
-                // })
                 setLoading(false)
                 return cleanArr
             }
@@ -78,7 +74,6 @@ function FileUpload(props) {
     }
 
     function handleChange(e){
-        console.log(e.target.files[0])
         setUploaded({
             file: e.target.files[0],
             fName: e.target.files[0].name
@@ -86,19 +81,6 @@ function FileUpload(props) {
 
     }
 
-    // function handleFilter(e){
-    //     console.log(uploaded.file, 'fuckyeah')
-    // }
-    // useEffect(()=>{
-    //     if (cleanFile?.file){
-    //         let objectURL = URL.createObjectURL(cleanFile?.file)
-    
-    //         link.download = 'clean-' + cleanFile?.fName
-    //         link.href = objectURL
-    
-    //         hiddenFileDownload.current.click()
-    //     }
-    // },[cleanFile, link])
 
     function handleDownload(){
         let objectURL = URL.createObjectURL(cleanFile?.file)
@@ -134,11 +116,6 @@ function FileUpload(props) {
                         </p>
                         <p className='cleanButton' onClick={(e)=> handleFilter(e)}>Clean File</p>
                     </div>
-
-                    {/* <div className='cleanFileWrap'>
-                        <img className='uploadIcon' src={fDl} onClick={(e)=> handleDownload(e)}></img>
-                        <p>{uploaded?.fName ? uploaded?.fName : 'Download'}</p>
-                    </div> */}
 
                 </>
             )}

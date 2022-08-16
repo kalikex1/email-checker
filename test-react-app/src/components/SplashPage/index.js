@@ -5,23 +5,31 @@ import './SplashPage.css'
 import Input from 'react-phone-number-input/input'
 import 'react-phone-number-input/style.css'
 
+import loader from './singleLoader.gif'
+
 function SplashPage() {
     const [singleInput, setSingleInput] = useState('')
     const [loaded, setLoaded] = useState(false)
     const [singleResult, setSingleResult] = useState({})
 
-    const [singleLoaded, setSingleLoaded] = useState(true)
+    // const [singleLoaded, setSingleLoaded] = useState(true)
 
     const [resultClass, setResultClass] = useState('test')
+
+
+    const [eLoad, setELoad] = useState(false)
+    const [pLoad, setPLoad] = useState(false)
 
     // EMAIL FUNCTIONS
 
     async function singleSubmit(e){
         e.preventDefault()
+        setELoad(true)
         const result = await fetch(`https://aaront612.pythonanywhere.com/multi/${singleInput}`, { method: 'GET' })
             .then(response => response.json())
             .then(data => { return data })
         await setSingleResult(await result)
+        setELoad(false)
     }
 
     useEffect(()=>{
@@ -48,6 +56,7 @@ function SplashPage() {
 
     async function phoneSubmit(e) {
         e.preventDefault()
+        setPLoad(true)
 
         const test = value.slice(2)
 
@@ -55,6 +64,7 @@ function SplashPage() {
             .then(response => response.json())
             .then(data => { return data })
         await setValueResult(await result)
+        setPLoad(false)
     }
 
     useEffect(() => {
@@ -85,8 +95,15 @@ function SplashPage() {
                             </form>
                         </div>
                         <div className='eResults'>
-                        <p className={resultClass}>{singleResult?.Result ? singleResult?.Input + ' : ' + singleResult?.Result : 'Email - Test For Results'}</p>
-                        <p>Reason: {singleResult?.Reason ? singleResult?.Reason : 'N/A'}</p>
+                            {eLoad && (
+                            <img src={loader} alt='' className='singleLoaderIcon'></img>
+                            )}
+                            {!eLoad && (
+                                <>
+                                    <p className={resultClass}>{singleResult?.Result ? singleResult?.Input + ' : ' + singleResult?.Result : 'Email - Test For Results'}</p>
+                                    <p>Reason: {singleResult?.Reason ? singleResult?.Reason : 'N/A'}</p>
+                                </>
+                            )}
                         </div>
                 </div>
                 <div className='phoneBox'>
@@ -107,8 +124,15 @@ function SplashPage() {
                         </form>
                     </div>
                     <div className='pResults'>
-                        <p className={phoneResultClass}>{valueResult?.Result ? valueResult?.Input + ' : ' + valueResult?.Result : 'Phone - Test For Results'}</p>
-                        <p>Phone Carrier: {valueResult?.Carrier ? valueResult?.Carrier : 'N/A'}</p>
+                        {pLoad && (
+                            <img src={loader} alt='' className='singleLoaderIcon'></img>
+                        )}
+                        {!pLoad && (
+                            <>
+                                <p className={phoneResultClass}>{valueResult?.Result ? valueResult?.Input + ' : ' + valueResult?.Result : 'Phone - Test For Results'}</p>
+                                <p>Phone Carrier: {valueResult?.Carrier ? valueResult?.Carrier : 'N/A'}</p>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>
