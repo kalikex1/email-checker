@@ -48,7 +48,7 @@ function App() {
             <div className="pageSelector">
               <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Verification</h5>
               <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5>
-              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>LinkedIn Apply</h5>
+              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>Subscribe</h5>
             </div>
             {selected === 1 && (
               < SplashPage />
@@ -59,9 +59,6 @@ function App() {
             {selected === 3 && (
               < LinkedInApply />
             )}
-            {/* <div className="footer">
-
-            </div> */}
     </>
   );
 }
