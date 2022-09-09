@@ -6,9 +6,13 @@ function LinkedInApply() {
 
 
     return (
-        <div className='urlScaperHolder'>
+        <div className='learnMoreWrap'>
+            <div className='subBox'>
 
-linked in
+            </div>
+            <div className='contactForm'>
+
+            </div>
         </div>
     );
 }

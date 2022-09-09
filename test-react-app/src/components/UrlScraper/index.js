@@ -12,16 +12,19 @@ function UrlScraper() {
 
     return (
         <div className='urlScaperHolder'>
-            <div>
-                <p>Paste Url</p>
+            <div className='inputHolder'>
+                <p>- Search & Collect Contact Information -</p>
                 <form>
-                    <input type='url'></input>
-                    <button type='submit'></button>
+                    <input type='url' placeholder='Insert Url'></input>
+                    <button type='submit'>Search Url</button>
                 </form>
+                <div className='currentBar'>
+                    Search Current Webpage
+                </div>
             </div>
-            <div>
-                <p>Results</p>
-                <div>
+            <div className='resultSection'>
+                <div className='resultHeader'>Results Below:</div>
+                <div className='resultBox'>
                     {/* . map yadda yadda */}
                 </div>
             </div>

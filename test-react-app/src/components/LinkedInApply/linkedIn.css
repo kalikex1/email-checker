@@ -1,0 +1,21 @@
+.learnMoreWrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+.subBox{
+    border: solid #be74ff 1px;
+    width: 75%;
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.contactForm {
+    border: solid #be74ff 1px;
+    width: 75%;
+    height: 150px;
+}
