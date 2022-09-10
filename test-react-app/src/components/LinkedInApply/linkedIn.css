@@ -14,8 +14,20 @@
     margin-bottom: 25px;
 }
 
+.subBox > * {
+    margin: 0px;
+}
+
 .contactForm {
-    border: solid #be74ff 1px;
+    /* border: solid #be74ff 1px; */
     width: 75%;
     height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactForm > * {
+    margin: 5px;
 }
