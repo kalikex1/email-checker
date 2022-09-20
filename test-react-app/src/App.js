@@ -47,8 +47,8 @@ function App() {
             </div>
             <div className="pageSelector">
               <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Verification</h5>
-              <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5>
-              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>Learn More</h5>
+              {/* <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5> */}
+              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>Subscribe / Learn More</h5>
             </div>
             {selected === 1 && (
               < SplashPage />

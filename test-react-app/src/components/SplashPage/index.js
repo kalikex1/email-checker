@@ -44,7 +44,7 @@ function SplashPage() {
             setResultClass('valid')
         }
     }, [singleResult])
-    
+
 
     // PHONE FUNCTIONS
  
