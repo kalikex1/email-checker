@@ -12,10 +12,22 @@
     width: 75%;
     height: 150px;
     margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+    flex-direction: column;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 1px 1px lightgray;
 }
 
 .subBox > * {
     margin: 0px;
+}
+
+.email-Input > *{
+    outline: none;
 }
 
 .contactForm {
@@ -30,4 +42,7 @@
 
 .contactForm > * {
     margin: 5px;
+    resize: none;
+    outline: none;
 }
+

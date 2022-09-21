@@ -14,9 +14,12 @@ function LinkedInApply() {
         <div className='learnMoreWrap'>
             <div className='subBox'>
                 <label> Subscribe for...</label>
-                <p>- Lifetime Deal on Contact Hero+</p>
+                <p>- Lifetime Deal on Contact Hero +</p>
                 <p>- Stay up to date with Releases</p>
-                <p>- </p>
+                <div className='email-Input'>
+                    <input type='email'></input>
+                    <button>Subscribe</button>
+                </div>
 
             </div>
             <div className='contactForm'>
