@@ -10,14 +10,14 @@
 .subBox{
     border: solid #be74ff 1px;
     width: 75%;
-    height: 150px;
-    margin-bottom: 25px;
+    height: 140px;
+    margin-bottom: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 3px;
-    padding: 15px;
+    padding: 10px;
     background-color: white;
     box-shadow: 0px 0px 1px 1px lightgray;
 }
@@ -89,3 +89,64 @@
     outline: none;
 }
 
+.contactForm > h3{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px lightgray;
+}
+
+.contactForm > form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactForm > form > *{
+    padding: 3px;
+    margin: 3px;
+}
+
+.contactForm > form > textarea {
+    height: 75px;
+}
+
+.contactForm > form > button {
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contactForm>form>button:active {
+    transform: translateY(1px);
+}
+
+
+.subbedBox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+
+.contactForm > p{
+    font-size: smaller;
+    margin: 0px;
+}
+
+.subbedBox > p{
+    font-size: small;
+    padding: 0px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #874eb8;
+}
+
+.subbedBox > h2{
+    margin-bottom: 0px;
+}

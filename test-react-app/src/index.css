@@ -23,6 +23,7 @@ body{
     align-items: center;
     justify-content: space-around;
     color: black;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 /* left and right nav divs */
@@ -32,12 +33,14 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: medium;
 }
 
 
 .navLeft > h4{
     padding: 0px;
     margin: 0px;
+    font-size: medium;
 }
 
 .navLeft:hover{
@@ -111,6 +114,7 @@ body{
     box-sizing: border-box;
     box-shadow: 0px 0px 1px 1px transparent;
     /* border-radius: 3px; */
+    font-size: medium;
 }
 
 .pageSelector>*:hover{
@@ -121,6 +125,7 @@ body{
 .pageSelector>*{
     padding: 2px;
     box-shadow: 0px 0px 1px 1px transparent;
+    font-size: normal;
 }
 
 .Selected{
