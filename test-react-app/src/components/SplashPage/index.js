@@ -89,7 +89,7 @@ function SplashPage() {
                 <div className='emailBox'>
                         <div className='eInput'>
                             <form onSubmit={(e) => singleSubmit(e)}>
-                                <input type="email" placeholder="Email Address" onChange={(e) => { setSingleInput(e.target.value) }} />
+                                <input required type="email" placeholder="Email Address" onChange={(e) => { setSingleInput(e.target.value) }} />
                                 {/* <div onClick={singleSubmit}>Verify</div> */}
                                 <button type='submit'>Verify</button>
                             </form>
@@ -119,6 +119,7 @@ function SplashPage() {
                                 // country='US'
                                 value={value}
                                 onChange={setValue}
+                                required
                             />
                             <button type='submit'>Verify</button>
                         </form>
