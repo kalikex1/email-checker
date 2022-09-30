@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './linkedIn.css'
 
-function LinkedInApply() {
+function ContactPage() {
 
 
     const [eName, setEName] = useState('')
@@ -33,4 +33,4 @@ function LinkedInApply() {
     );
 }
 
-export default LinkedInApply;
+export default ContactPage;

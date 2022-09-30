@@ -11,7 +11,7 @@ import tw from './images/twitter.png'
 import linkedin from './images/linkedin.png'
 import email from './images/email.png'
 import UrlScraper from "./components/UrlScraper";
-import LinkedInApply from "./components/LinkedInApply";
+import ContactPage from "./components/ContactPage";
 
 
 
@@ -57,7 +57,7 @@ function App() {
               < UrlScraper />
             )}
             {selected === 3 && (
-              < LinkedInApply />
+              < ContactPage />
             )}
     </>
   );
