@@ -31,17 +31,17 @@ function App() {
   return (
     <>
             <div className="navBar">
-              <div className="navLeft" onClick={() => { window.open("https://contacthero.tech", '_blank') }}>
+              <div className="navLeft">
                 <img src={logo} alt=""></img>
                 <h4>Contact Hero</h4>
               </div>
               <div className="navRight">
                 <h5>Share: </h5>
                 <div className="shareHolder">
-                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={fb} alt="fb"/>
-                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={tw} alt="tw"/>
-                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={linkedin} alt="linkedin"/>
-                  <img onClick={(e) => { window.open("https://contacthero.tech", '_blank') }} src={email} alt="email"/>
+                  <img onClick={(e) => { window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={fb} alt="fb"/>
+                  <img onClick={(e) => { window.open("https://twitter.com/intent/tweet?text=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={tw} alt="tw"/>
+                  <img onClick={(e) => { window.open("https://www.linkedin.com/shareArticle?mini=true&url=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0&title=Free%20Email%20Verification&summary=&source=", '_blank') }} src={linkedin} alt="linkedin"/>
+                  <img onClick={(e) => { window.open("mailto:?subject=Free%20Email%20Verification&body=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={email} alt="email"/>
                 </div>
               </div>
             </div>
