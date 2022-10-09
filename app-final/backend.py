@@ -15,7 +15,7 @@ def email_verify(e):
 
     print(e)
 
-    #preset outcomes#
+    #preset outcomes
 
     disposable = 'Untested'
     domain = 'Unstested'
@@ -23,7 +23,7 @@ def email_verify(e):
     code = 'Untested'
     reason = 'Unsure - Please Try Again (report this error if found so we can improve)'
 
-    #testing begins#
+    #testing begins
 
     regex = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$"
     inputAddress = e
@@ -87,8 +87,8 @@ def email_verify(e):
             return 'Unsure'
 
     except :
-            reason = 'MX Server Disconnected - Please try again or report this error'
-            return 'Unsure'
+            reason = 'No Response from server'
+            return 'Invalid'
 
         # end of function #
 
@@ -175,7 +175,7 @@ def email_verifyy(e):
             return 'Unsure ' + reason
 
     except :
-            reason = '- MX Server Disconnected - Please try again or report this error'
+            reason = '- Error - Please try again or report this error'
             return 'Unsure ' + reason
 
         # end of function #
