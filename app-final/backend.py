@@ -3,6 +3,8 @@ import smtplib
 import dns.resolver
 import csv
 
+# from email_validator import validate_email
+
 
 
 def email_verify(e):
@@ -179,3 +181,35 @@ def email_verifyy(e):
             return 'Unsure ' + reason
 
         # end of function #
+
+
+# def email_verify_new(e):
+
+#         global reason
+#         global code
+#         global mxRecord
+#         global domain
+#         global disposable
+
+#         print(e)
+
+#         #preset outcomes
+
+#         disposable = 'Untested'
+#         domain = 'Unstested'
+#         mxRecord = 'Untested'
+#         code = 'Untested'
+#         reason = 'Unsure - Please Try Again (report this error if found so we can improve)'
+
+#         #testing begins
+
+#         testEmail = "exampleeeee123123123123@numetric.com"
+
+#         emailObject = validate_email(testEmail)
+#         print(emailObject.email)
+
+
+
+
+#         # end of function #
+# email_verify_new('hi')

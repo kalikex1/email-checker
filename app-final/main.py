@@ -70,6 +70,27 @@ def phone(uuid):
         'Carrier' : phoneResult['Carrier']
         },)
 
+
+# @app.route("/newtest/<uuid>", methods=['GET'])
+# def api_test(uuid):
+#     response = make_response()
+#     response.headers.add("Access-Control-Allow-Origin", "*")
+#     response.headers.add("Access-Control-Allow-Headers", "*")
+#     response.headers.add("Access-Control-Allow-Methods", "*")
+
+#     multip = backend.email_verify_new(uuid)
+
+#     return jsonify({
+#         'Input' : uuid ,
+#         'Result' : multip ,
+#         'Reason' : backend.reason ,
+#         'Domain' : backend.domain ,
+#         'Disposable' : backend.disposable ,
+#         'MX_Server' : backend.mxRecord ,
+#         'SMTP_Code' : backend.code
+#         },)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
