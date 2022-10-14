@@ -33,40 +33,86 @@ function FileUpload(props) {
         setLoading(true)
 
         
-        let fileRows = Papa.parse(uploaded.file, {
+        let fileRows = await Papa.parse(uploaded.file, {
+            delimiter: '',
+            newline: '',
             header: true,
             skipEmptyLines: true,
             complete: async function (results) {
                 const cleanArr = []
-                console.log(results.data)
-                for (let i = 0; i < results.data.length; i++){
-                    if(results.data[i]['Email']){
-                        let result = await emailCheck(results.data[i]['Email'])
-                        if (result.Result === 'Valid'){
-                            console.log(results.data[i], 'validddd')
-                            cleanArr.push(results.data[i])
-                        }
-        
-                    } else if (results.data[i]['email']){
-                        let result = await emailCheck(results.data[i]['email'])
-                        if (result.Result === 'Valid') {
-                            console.log(results.data[i], 'validddd')
-                            cleanArr.push(results.data[i])
+                if (results.data[0]['Email'] || results.data[0]['email']){
+                    console.log(results.data.length, 'emails found - organized')
+                    for (let i = 0; i < results.data.length; i++){
+                        if(results.data[i]['Email']){
+                            let result = await emailCheck(results.data[i]['Email'])
+                            if (result.Result === 'Valid'){
+                                console.log(results.data[i], 'validddd')
+                                cleanArr.push(results.data[i])
+                            }
+            
+                        } else if (results.data[i]['email']){
+                            let result = await emailCheck(results.data[i]['email'])
+                            if (result.Result === 'Valid') {
+                                console.log(results.data[i], 'validddd')
+                                cleanArr.push(results.data[i])
+                            }
                         }
                     }
-                }
-                const newF = await Papa.unparse(cleanArr)
+                    const newF = await Papa.unparse(cleanArr)
 
-                let csvData = new Blob([newF], {type: 'text/csv;charset=utf-8;'})
-                let csvURL = window.URL.createObjectURL(csvData)
-                link.download = 'clean-'+uploaded.fName
-                link.href = csvURL
-                hiddenFileDownload.current.click()
-                setLoading(false)
-                return cleanArr
+                    let csvData = new Blob([newF], { type: 'text/csv;charset=utf-8;' })
+                    let csvURL = window.URL.createObjectURL(csvData)
+                    link.download = 'clean-' + uploaded.fName
+                    link.href = csvURL
+                    setLoading(false)
+                    hiddenFileDownload.current.click()
+                    return cleanArr
+                } else {
+                    let unorganized = await Papa.parse(uploaded.file, {
+                        delimiter: '',
+                        newline: '',
+                        header: false,
+                        skipEmptyLines: false,
+                        complete: async function (results) {
+                            const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                            let emailArr =[]
+                            for(let i = 0; i < results.data.length; i++){
+                                let filtered = results.data[i].filter(str => re.test(str))
+                                emailArr = [...emailArr, ...filtered]
+                            }
+                            console.log(emailArr.length, 'emails found - unorganized')
+                            for(let i = 0; i < emailArr.length; i++){
+                                let result = await emailCheck(emailArr[i])
+                                if (result.Result === 'Valid') {
+                                    cleanArr.push(emailArr[i])
+                                }
+                            }
+
+                            let finalArr = []
+                            console.log(cleanArr)
+                            while (cleanArr.length) {
+                                console.log('in loop')
+                                let val = cleanArr.shift()
+                                finalArr.push({ 'Email': val })
+                            }
+                            console.log(finalArr)
+                            const newF = await Papa.unparse(finalArr)
+
+                            let csvData = new Blob([newF], { type: 'text/csv;charset=utf-8;' })
+                            let csvURL = window.URL.createObjectURL(csvData)
+                            link.download = 'clean-' + uploaded.fName
+                            link.href = csvURL
+                            setLoading(false)
+                            hiddenFileDownload.current.click()
+                            return finalArr
+                        }
+
+                    
+                    })
+                }
+
             }
         })
-
     }
 
     function handleClick(e){
