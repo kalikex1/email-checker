@@ -44,9 +44,10 @@ def email_verify(e):
     try:
             dns.resolver.query(domain, 'MX')
 
-    except dns.resolver.NoAnswer:
+    except:
             reason = 'No MX Server Exist'
             return 'Invalid'
+
 
     records = dns.resolver.query(domain, 'MX')
     mxRecord = records[0].exchange
@@ -85,14 +86,15 @@ def email_verify(e):
 
 
     except (smtplib.SMTPServerDisconnected):
-            reason = 'MX Server Disconnected - Please try again or report this error'
-            return 'Unsure'
+            reason = 'Passed all tests.'
+            return 'Valid'
 
     except :
             reason = 'No Response from server'
             return 'Invalid'
 
         # end of function #
+# email_verify('darakjy@hotmail.org')
 
 
 def email_verifyy(e):
@@ -132,7 +134,7 @@ def email_verifyy(e):
     try:
             dns.resolver.query(domain, 'MX')
 
-    except dns.resolver.NoAnswer:
+    except:
             reason = '- No MX Server Exist'
             return 'Invalid ' + reason
 

@@ -93,6 +93,8 @@
     height: 100px;
     text-align: center;
     background-color: white !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .fileLoader > img{
@@ -123,4 +125,64 @@
 
 .cleanButton:hover{
     cursor: pointer;
+}
+
+.csvLoadBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}
+
+.csvTop{
+    width: 275px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+}
+
+.csvTop > p{
+    margin: 0px;
+    margin-left: 20px;
+    font-size: small;
+}
+
+
+.csvTextTop{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+}
+
+.csvTextTop1{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 15px;
+}
+
+.csvBottom{
+    width: 275px;
+    max-width: 275px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+}
+
+
+.csvBottom > p{
+    color: lightgray;
+}
+
+.csvBottom > *{
+    padding: 0px;
+    font-size: small;
 }

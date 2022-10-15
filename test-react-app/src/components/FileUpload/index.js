@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import LinearProgress from '@mui/material/LinearProgress'
+
 import './FileUpload.css'
 
 import fI from './fileIcon.png'
@@ -15,6 +17,11 @@ function FileUpload(props) {
     const [cleanFile, setCleanFile] = useState({})
 
     const [loading, setLoading] = useState(false)
+
+    //file upload feature variables
+    const [totalEmails, setTotalEmails] = useState(0)
+    const [currentEmail, setCurrentEmail] = useState('')
+    const [percentValue, setPercentValue] = useState(0)
 
     const hiddenFileInput = React.useRef(null)
     const hiddenFileDownload = React.useRef(null)
@@ -40,21 +47,33 @@ function FileUpload(props) {
             skipEmptyLines: true,
             complete: async function (results) {
                 const cleanArr = []
+                let percentCount = 0
                 if (results.data[0]['Email'] || results.data[0]['email']){
                     console.log(results.data.length, 'emails found - organized')
+                    setTotalEmails(results.data.length)
                     for (let i = 0; i < results.data.length; i++){
                         if(results.data[i]['Email']){
+                            setCurrentEmail(results.data[i]['Email'])
                             let result = await emailCheck(results.data[i]['Email'])
                             if (result.Result === 'Valid'){
-                                console.log(results.data[i], 'validddd')
+                                percentCount++
+                                setPercentValue(Math.round(percentCount / results.data.length * 100, 1))
                                 cleanArr.push(results.data[i])
+                            } else { 
+                                percentCount++
+                                setPercentValue(Math.round(percentCount / results.data.length * 100), 1)
                             }
             
                         } else if (results.data[i]['email']){
+                            setCurrentEmail(results.data[i]['email'])
                             let result = await emailCheck(results.data[i]['email'])
                             if (result.Result === 'Valid') {
-                                console.log(results.data[i], 'validddd')
+                                percentCount++
+                                setPercentValue(Math.round(percentCount / results.data.length * 100), 1)
                                 cleanArr.push(results.data[i])
+                            } else {
+                                percentCount++
+                                setPercentValue(Math.round(percentCount / results.data.length * 100), 1)
                             }
                         }
                     }
@@ -65,6 +84,9 @@ function FileUpload(props) {
                     link.download = 'clean-' + uploaded.fName
                     link.href = csvURL
                     setLoading(false)
+                    setPercentValue(0)
+                    setTotalEmails(0)
+                    percentCount = 0
                     hiddenFileDownload.current.click()
                     return cleanArr
                 } else {
@@ -80,18 +102,23 @@ function FileUpload(props) {
                                 let filtered = results.data[i].filter(str => re.test(str))
                                 emailArr = [...emailArr, ...filtered]
                             }
-                            console.log(emailArr.length, 'emails found - unorganized')
+                            setTotalEmails(emailArr.length)
                             for(let i = 0; i < emailArr.length; i++){
+                                setCurrentEmail(emailArr[i])
                                 let result = await emailCheck(emailArr[i])
                                 if (result.Result === 'Valid') {
+                                    percentCount++
+                                    setPercentValue(Math.round(percentCount / emailArr.length * 100), 1)
                                     cleanArr.push(emailArr[i])
+                                }else{
+                                    percentCount++
+                                    setPercentValue(Math.round(percentCount / emailArr.length * 100), 1)
                                 }
                             }
 
                             let finalArr = []
                             console.log(cleanArr)
                             while (cleanArr.length) {
-                                console.log('in loop')
                                 let val = cleanArr.shift()
                                 finalArr.push({ 'Email': val })
                             }
@@ -103,6 +130,9 @@ function FileUpload(props) {
                             link.download = 'clean-' + uploaded.fName
                             link.href = csvURL
                             setLoading(false)
+                            setTotalEmails(0)
+                            setPercentValue(0)
+                            percentCount = 0
                             hiddenFileDownload.current.click()
                             return finalArr
                         }
@@ -145,8 +175,18 @@ function FileUpload(props) {
         <div className='fileUploadWrap'>
             {loading && (
                 <div className='fileLoader'>
-                    <img src={loadGif} alt=''></img>
-                    <p>Large Files May Take Several Minutes</p>
+                    {/* <img src={loadGif} alt=''></img> */}
+                    <p className='csvTextTop1'>Large Files May Take Several Minutes</p>
+                    <p className='csvTextTop'>{totalEmails} contacts found</p>
+                    <div className='csvLoadBottom'>
+                        <div className='csvTop'>
+                            <LinearProgress variant="buffer" value={percentValue} sx={{width: '200px' }} />
+                            <p>{percentValue}%</p>
+                        </div>
+                        <div className='csvBottom'>
+                            <p>{currentEmail}...</p>
+                        </div>
+                    </div>
                 </div>
             )}
             {!loading && (
