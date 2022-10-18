@@ -194,7 +194,7 @@ function FileUpload(props) {
                     <div className="dirtyContainer" onClick={(e)=> handleClick(e)}>
 
                         <img className='uploadIcon' src={fI}></img>
-                            <p>{uploaded?.fName ? uploaded?.fName : chrome.i18n.getMessage('fileUploadHere')}</p>
+                            <p>{uploaded?.fName ? `${uploaded?.fName.slice(0,8)}...` : chrome.i18n.getMessage('fileUploadHere')}</p>
                     </div>
                     <div className='infoBox'>
                         <p>

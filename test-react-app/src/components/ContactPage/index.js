@@ -110,7 +110,7 @@ function ContactPage() {
                 <form ref={form2} onSubmit={(e)=> {e.preventDefault(); newMessage()}}>
                     <input name='user_name' value={eName} required type='text' placeholder={chrome.i18n.getMessage('contactForm1')} onChange={(e) => { setEName(e.target.value) }}></input>
                     <input name='user_email' value={email} required type='email' placeholder={chrome.i18n.getMessage('contactForm2')} onChange={(e)=> {setEmail(e.target.value)}}></input>
-                    <textarea name='message' value={message} required placeholder={chrome.i18n.getMessage('contactForm3')} onChange={(e) => { setMessage(e.target.value) }}></textarea>
+                    <textarea style={{resize:"none"}} name='message' value={message} required placeholder={chrome.i18n.getMessage('contactForm3')} onChange={(e) => { setMessage(e.target.value) }}></textarea>
                     <button>{chrome.i18n.getMessage('contactFormBtn')}</button>
                 </form>
             </div>
