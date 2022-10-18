@@ -1,6 +1,6 @@
 {
-  "name": "Contact Hero",
-  "description": "Verify any email address while on the go with this convenient extension",
+  "name": "__MSG_manifestTitle__",
+  "description": "__MSG_manifestDescription__",
   "version": "2.01",
   "manifest_version": 3,
   "action": {
@@ -11,8 +11,9 @@
       "48": "./yes.png",
       "128": "./yes.png"
     },
-    "default_title": "Contact Hero"
+    "default_title": "__MSG_manifestTitle__"
   },
+  "default_locale": "en",
   "icons": {
     "16": "./yes.png",
     "32": "./yes.png",

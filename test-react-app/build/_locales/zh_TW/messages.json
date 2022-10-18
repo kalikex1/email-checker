@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "联系英雄"
+    },
+    "manifestDescription": {
+        "message": "使用这个方便的扩展程序在旅途中验证任何电子邮件地址"
+    },
+    "navTitle": {
+        "message": "联系英雄"
+    },
+    "navShare": {
+        "message": "分享"
+    },
+    "navVerification": {
+        "message": "验证"
+    },
+    "navSubscribe": {
+        "message": "订阅/反馈"
+    },
+    "splashEmailPlacehold": {
+        "message": "电子邮件地址"
+    },
+    "splashVerifyBtn": {
+        "message": "验证"
+    },
+    "splashEmailResultHolder": {
+        "message": "电子邮件 - 测试结果"
+    },
+    "splashEmailReasonLabel": {
+        "message": "原因:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "仅限美国电话号码"
+    },
+    "splashPhoneResultHolder": {
+        "message": "电话 - 测试结果"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "电话运营商:"
+    },
+    "fileLargeFiles": {
+        "message": "大文件可能需要几分钟"
+    },
+    "fileContactsFound": {
+        "message": "找到联系人"
+    },
+    "fileUploadHere": {
+        "message": "在这里上传"
+    },
+    "fileInfoBox": {
+        "message": "上传 csv 文件以进行批量验证。在文件中包含标题以获得最佳结果（即'电子邮件'）"
+    },
+    "fileSubmitBtn": {
+        "message": "清理文件"
+    },
+    "contactThankYou": {
+        "message": "感谢您的订阅！"
+    },
+    "contactAddEmail": {
+        "message": "添加另一封电子邮件？"
+    },
+    "contactSub1": {
+        "message": "订阅..."
+    },
+    "contactSub2": {
+        "message": "- Contact Hero + 终身交易"
+    },
+    "contactSub3": {
+        "message": "- 及时了解发布"
+    },
+    "contactSubBtn": {
+        "message": "订阅"
+    },
+    "contactForm": {
+        "message": "问题和反馈"
+    },
+    "contactFormSub": {
+        "message": "收到消息!"
+    },
+    "contactForm1": {
+        "message": "名称"
+    },
+    "contactForm2": {
+        "message": "电子邮件"
+    },
+    "contactForm3": {
+        "message": "在此处输入..."
+    },
+    "contactFormBtn": {
+        "message": "提交"
+    }
+}

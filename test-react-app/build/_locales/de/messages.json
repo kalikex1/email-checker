@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Kontaktiere den Helden"
+    },
+    "manifestDescription": {
+        "message": "Mit dieser praktischen Erweiterung jede E-Mail-Adresse unterwegs verifizieren"
+    },
+    "navTitle": {
+        "message": "Kontaktiere den Helden"
+    },
+    "navShare": {
+        "message": "Teilen"
+    },
+    "navVerification": {
+        "message": "Verifizierung"
+    },
+    "navSubscribe": {
+        "message": "Abonnieren / Feedback"
+    },
+    "splashEmailPlacehold": {
+        "message": "E-Mail-Adresse"
+    },
+    "splashVerifyBtn": {
+        "message": "Bestätigen"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-Mail - Test auf Ergebnisse"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Grund:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Nur US-Telefonnummer"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telefon - Test auf Ergebnisse"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Telefonanbieter:"
+    },
+    "fileLargeFiles": {
+        "message": "Große Dateien können mehrere Minuten dauern"
+    },
+    "fileContactsFound": {
+        "message": "Kontakte gefunden"
+    },
+    "fileUploadHere": {
+        "message": "Hier hochladen"
+    },
+    "fileInfoBox": {
+        "message": "Laden Sie eine CSV-Datei zur Massenüberprüfung hoch. Fügen Sie Kopfzeilen in die Datei ein, um die besten Ergebnisse zu erzielen (z. B. 'E-Mail')"
+    },
+    "fileSubmitBtn": {
+        "message": "Datei säubern"
+    },
+    "contactThankYou": {
+        "message": "Danke fürs Abonnieren!"
+    },
+    "contactAddEmail": {
+        "message": "Weitere E-Mail hinzufügen?"
+    },
+    "contactSub1": {
+        "message": "Abonnieren für..."
+    },
+    "contactSub2": {
+        "message": "- Lifetime Deal on Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Bleiben Sie mit Veröffentlichungen auf dem Laufenden"
+    },
+    "contactSubBtn": {
+        "message": "Abonnieren"
+    },
+    "contactForm": {
+        "message": "Fragen & Feedback"
+    },
+    "contactFormSub": {
+        "message": "message erhalten!"
+    },
+    "contactForm1": {
+        "message": "Name"
+    },
+    "contactForm2": {
+        "message": "E-Mail"
+    },
+    "contactForm3": {
+        "message": "Geben Sie hier ein ..."
+    },
+    "contactFormBtn": {
+        "message": "Senden"
+    }
+}

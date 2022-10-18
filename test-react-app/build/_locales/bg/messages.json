@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Герой за контакт"
+    },
+    "manifestDescription": {
+        "message": "Потвърдете всеки имейл адрес, докато сте в движение с това удобно разширение"
+    },
+    "navTitle": {
+        "message": "Герой за контакт"
+    },
+    "navShare": {
+        "message": "Споделяне"
+    },
+    "navVerification": {
+        "message": "Потвърждение"
+    },
+    "navSubscribe": {
+        "message": "Абониране / Обратна връзка"
+    },
+    "splashEmailPlacehold": {
+        "message": "Имейл адрес"
+    },
+    "splashVerifyBtn": {
+        "message": "Потвърдете"
+    },
+    "splashEmailResultHolder": {
+        "message": "Имейл - Тест за резултати"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Причина:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Само телефонен номер в САЩ"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Телефон - тест за резултати"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Телефонен оператор:"
+    },
+    "fileLargeFiles": {
+        "message": "Големите файлове може да отнемат няколко минути"
+    },
+    "fileContactsFound": {
+        "message": "Намерени контакти"
+    },
+    "fileUploadHere": {
+        "message": "Качване тук"
+    },
+    "fileInfoBox": {
+        "message": "Качете csv файл за групова проверка. Включете заглавки във файла за най-добри резултати (т.е. 'Имейл')"
+    },
+    "fileSubmitBtn": {
+        "message": "Изчистване на файл"
+    },
+    "contactThankYou": {
+        "message": "Благодарим ви, че се абонирахте!"
+    },
+    "contactAddEmail": {
+        "message": "добавете друг имейл?"
+    },
+    "contactSub1": {
+        "message": "Абонирайте се за..."
+    },
+    "contactSub2": {
+        "message": "- Доживотна сделка за Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Бъдете в течение с изданията"
+    },
+    "contactSubBtn": {
+        "message": "Абониране"
+    },
+    "contactForm": {
+        "message": "Въпроси и обратна връзка"
+    },
+    "contactFormSub": {
+        "message": "Съобщението е получено!"
+    },
+    "contactForm1": {
+        "message": "Име"
+    },
+    "contactForm2": {
+        "message": "Имейл"
+    },
+    "contactForm3": {
+        "message": "Въведете тук..."
+    },
+    "contactFormBtn": {
+        "message": "Изпращане"
+    }
+}

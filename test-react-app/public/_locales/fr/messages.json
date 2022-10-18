@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Contacter le héros"
+    },
+    "manifestDescription": {
+        "message": "Vérifiez n'importe quelle adresse e-mail lors de vos déplacements avec cette extension pratique"
+    },
+    "navTitle": {
+        "message": "Contacter le héros"
+    },
+    "navShare": {
+        "message": "Partager"
+    },
+    "navVerification": {
+        "message": "Vérification"
+    },
+    "navSubscribe": {
+        "message": "S'abonner/Commentaires"
+    },
+    "splashEmailPlacehold": {
+        "message": "Adresse e-mail"
+    },
+    "splashVerifyBtn": {
+        "message": "Vérifier"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-mail - Tester les résultats"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Raison :"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Numéro de téléphone américain uniquement"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Téléphone - Tester les résultats"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Opérateur téléphonique :"
+    },
+    "fileLargeFiles": {
+        "message": "Les fichiers volumineux peuvent prendre plusieurs minutes"
+    },
+    "fileContactsFound": {
+        "message": "Contacts trouvés"
+    },
+    "fileUploadHere": {
+        "message": "Télécharger ici"
+    },
+    "fileInfoBox": {
+        "message": "Téléchargez un fichier csv pour une vérification groupée. Incluez des en-têtes dans le fichier pour de meilleurs résultats (c'est-à-dire 'Email')"
+    },
+    "fileSubmitBtn": {
+        "message": "Nettoyer le fichier"
+    },
+    "contactThankYou": {
+        "message": "Merci de vous être abonné !"
+    },
+    "contactAddEmail": {
+        "message": "ajouter un autre e-mail ?"
+    },
+    "contactSub1": {
+        "message": "S'inscrire pour..."
+    },
+    "contactSub2": {
+        "message": "- Offre à vie sur Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Restez à jour avec les versions"
+    },
+    "contactSubBtn": {
+        "message": "S'abonner"
+    },
+    "contactForm": {
+        "message": "Questions et commentaires"
+    },
+    "contactFormSub": {
+        "message": "Message reçu !"
+    },
+    "contactForm1": {
+        "message": "Nom"
+    },
+    "contactForm2": {
+        "message": "Courriel"
+    },
+    "contactForm3": {
+        "message": "Tapez ici..."
+    },
+    "contactFormBtn": {
+        "message": "Soumettre"
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Kahramanla İletişim Kur"
+    },
+    "manifestDescription": {
+        "message": "Hareket halindeyken bu kullanışlı uzantıyla herhangi bir e-posta adresini doğrulayın"
+    },
+    "navTitle": {
+        "message": "Kahramanla İletişim Kur"
+    },
+    "navShare": {
+        "message": "Paylaş"
+    },
+    "navVerification": {
+        "message": "Doğrulama"
+    },
+    "navSubscribe": {
+        "message": "Abone ol / Geri bildirim"
+    },
+    "splashEmailPlacehold": {
+        "message": "E-posta Adresi"
+    },
+    "splashVerifyBtn": {
+        "message": "Doğrula"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-posta - Sonuçları Test Et"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Nedeni:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Yalnızca ABD Telefon Numarası"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telefon - Sonuçları Test Et"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Telefon Operatörü:"
+    },
+    "fileLargeFiles": {
+        "message": "Büyük Dosyalar Birkaç Dakika Sürebilir"
+    },
+    "fileContactsFound": {
+        "message": "Kişiler Bulundu"
+    },
+    "fileUploadHere": {
+        "message": "Buraya Yükle"
+    },
+    "fileInfoBox": {
+        "message": "Toplu doğrulama için bir csv dosyası yükleyin. En iyi sonuçlar için dosyaya başlıkları ekleyin (ör. 'E-posta')"
+    },
+    "fileSubmitBtn": {
+        "message": "Dosyayı Temizle"
+    },
+    "contactThankYou": {
+        "message": "Abone olduğunuz için teşekkürler!"
+    },
+    "contactAddEmail": {
+        "message": "başka bir e-posta eklensin mi?"
+    },
+    "contactSub1": {
+        "message": "Abone ol..."
+    },
+    "contactSub2": {
+        "message": "- Contact Hero + için Ömür Boyu Fırsat"
+    },
+    "contactSub3": {
+        "message": "- Sürümlerden haberdar olun"
+    },
+    "contactSubBtn": {
+        "message": "Abone ol"
+    },
+    "contactForm": {
+        "message": "Sorular ve Geribildirim"
+    },
+    "contactFormSub": {
+        "message": "mesaj Alındı!"
+    },
+    "contactForm1": {
+        "message": "Ad"
+    },
+    "contactForm2": {
+        "message": "E-posta"
+    },
+    "contactForm3": {
+        "message": "Buraya yazın ..."
+    },
+    "contactFormBtn": {
+        "message": "Gönder"
+    }
+}

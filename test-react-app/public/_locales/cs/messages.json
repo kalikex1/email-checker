@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Kontaktujte hrdinu"
+    },
+    "manifestDescription": {
+        "message": "Ověřte jakoukoli e-mailovou adresu na cestách pomocí tohoto praktického rozšíření"
+    },
+    "navTitle": {
+        "message": "Kontaktujte hrdinu"
+    },
+    "navShare": {
+        "message": "Sdílet"
+    },
+    "navVerification": {
+        "message": "Ověření"
+    },
+    "navSubscribe": {
+        "message": "Přihlásit se k odběru / zpětná vazba"
+    },
+    "splashEmailPlacehold": {
+        "message": "E-mailová adresa"
+    },
+    "splashVerifyBtn": {
+        "message": "Ověřit"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-mail – otestujte výsledky"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Důvod:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Pouze telefonní číslo v USA"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telefon - otestujte výsledky"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Telefonní operátor:"
+    },
+    "fileLargeFiles": {
+        "message": "Velké soubory mohou trvat několik minut"
+    },
+    "fileContactsFound": {
+        "message": "Kontakty nalezeny"
+    },
+    "fileUploadHere": {
+        "message": "Nahrát sem"
+    },
+    "fileInfoBox": {
+        "message": "Nahrajte soubor csv pro hromadné ověření. Nejlepších výsledků dosáhnete zahrnutím záhlaví do souboru (tj. 'E-mail')"
+    },
+    "fileSubmitBtn": {
+        "message": "Vyčistit soubor"
+    },
+    "contactThankYou": {
+        "message": "Děkujeme za přihlášení k odběru!"
+    },
+    "contactAddEmail": {
+        "message": "přidat další e-mail?"
+    },
+    "contactSub1": {
+        "message": "Přihlásit se k odběru..."
+    },
+    "contactSub2": {
+        "message": "- Doživotní nabídka na Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Zůstaňte v obraze s vydáními"
+    },
+    "contactSubBtn": {
+        "message": "Přihlásit se k odběru"
+    },
+    "contactForm": {
+        "message": "Otázky a zpětná vazba"
+    },
+    "contactFormSub": {
+        "message": "Zpráva přijata!"
+    },
+    "contactForm1": {
+        "message": "Jméno"
+    },
+    "contactForm2": {
+        "message": "E-mail"
+    },
+    "contactForm3": {
+        "message": "Sem napište ..."
+    },
+    "contactFormBtn": {
+        "message": "Odeslat"
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Contact Hero"
+    },
+    "manifestDescription": {
+        "message": "Επαληθεύστε οποιαδήποτε διεύθυνση email ενώ βρίσκεστε εν κινήσει με αυτήν την βολική επέκταση"
+    },
+    "navTitle": {
+        "message": "Contact Hero"
+    },
+    "navShare": {
+        "message": "Κοινή χρήση"
+    },
+    "navVerification": {
+        "message": "Επαλήθευση"
+    },
+    "navSubscribe": {
+        "message": "Εγγραφή / Σχόλια"
+    },
+    "splashEmailPlacehold": {
+        "message": "Email address"
+    },
+    "splashVerifyBtn": {
+        "message": "Επαλήθευση"
+    },
+    "splashEmailResultHolder": {
+        "message": "Email - Test for Results"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Αιτία:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Μόνο αριθμός τηλεφώνου ΗΠΑ"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Τηλέφωνο - Δοκιμή για αποτελέσματα"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Phone Carrier:"
+    },
+    "fileLargeFiles": {
+        "message": "Τα μεγάλα αρχεία ενδέχεται να διαρκέσουν αρκετά λεπτά"
+    },
+    "fileContactsFound": {
+        "message": "Βρέθηκαν επαφές"
+    },
+    "fileUploadHere": {
+        "message": "Μεταφόρτωση εδώ"
+    },
+    "fileInfoBox": {
+        "message": "Μεταφορτώστε ένα αρχείο csv για μαζική επαλήθευση. Συμπεριλάβετε κεφαλίδες στο αρχείο για καλύτερα αποτελέσματα (π.χ. 'Email')"
+    },
+    "fileSubmitBtn": {
+        "message": "Clean File"
+    },
+    "contactThankYou": {
+        "message": "Ευχαριστούμε για την εγγραφή!"
+    },
+    "contactAddEmail": {
+        "message": "να προσθέσω άλλο email;"
+    },
+    "contactSub1": {
+        "message": "Εγγραφή για..."
+    },
+    "contactSub2": {
+        "message": "- Lifetime Deal on Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Μείνετε ενημερωμένοι με τις εκδόσεις"
+    },
+    "contactSubBtn": {
+        "message": "Εγγραφή"
+    },
+    "contactForm": {
+        "message": "Questions & Feedback"
+    },
+    "contactFormSub": {
+        "message": "Το μήνυμα ελήφθη!"
+    },
+    "contactForm1": {
+        "message": "Όνομα"
+    },
+    "contactForm2": {
+        "message": "Email"
+    },
+    "contactForm3": {
+        "message": "Πληκτρολογήστε εδώ ..."
+    },
+    "contactFormBtn": {
+        "message": "Υποβολή"
+    }
+}

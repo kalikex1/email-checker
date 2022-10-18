@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "हीरो से संपर्क करें"
+    },
+    "manifestDescription": {
+        "message": "इस सुविधाजनक एक्सटेंशन के साथ यात्रा के दौरान किसी भी ईमेल पते की पुष्टि करें"
+    },
+    "navTitle": {
+        "message": "हीरो से संपर्क करें"
+    },
+    "navShare": {
+        "message": "साझा करें"
+    },
+    "navVerification": {
+        "message": "सत्यापन"
+    },
+    "navSubscribe": {
+        "message": "सदस्यता लें / प्रतिक्रिया दें"
+    },
+    "splashEmailPlacehold": {
+        "message": "ईमेल पता"
+    },
+    "splashVerifyBtn": {
+        "message": "सत्यापित करें"
+    },
+    "splashEmailResultHolder": {
+        "message": "ईमेल - परिणामों के लिए परीक्षण"
+    },
+    "splashEmailReasonLabel": {
+        "message": "कारण:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "सिर्फ़ यूएस फ़ोन नंबर"
+    },
+    "splashPhoneResultHolder": {
+        "message": "फ़ोन - परिणामों के लिए परीक्षण"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "फ़ोन कैरियर:"
+    },
+    "fileLargeFiles": {
+        "message": "बड़ी फ़ाइलों में कई मिनट लग सकते हैं"
+    },
+    "fileContactsFound": {
+        "message": "संपर्क मिले"
+    },
+    "fileUploadHere": {
+        "message": "यहाँ अपलोड करें"
+    },
+    "fileInfoBox": {
+        "message": "बल्क सत्यापन के लिए एक csv फ़ाइल अपलोड करें। सर्वोत्तम परिणामों के लिए फ़ाइल में हेडर शामिल करें (यानी 'ईमेल')"
+    },
+    "fileSubmitBtn": {
+        "message": "फ़ाइल साफ़ करें"
+    },
+    "contactThankYou": {
+        "message": "सदस्यता लेने के लिए धन्यवाद!"
+    },
+    "contactAddEmail": {
+        "message": "एक और ईमेल जोड़ें?"
+    },
+    "contactSub1": {
+        "message": "सदस्यता लें..."
+    },
+    "contactSub2": {
+        "message": "- संपर्क हीरो पर आजीवन डील +"
+    },
+    "contactSub3": {
+        "message": "- रिलीज़ के साथ अपडेट रहें"
+    },
+    "contactSubBtn": {
+        "message": "सदस्यता लें"
+    },
+    "contactForm": {
+        "message": "प्रश्न और प्रतिक्रिया"
+    },
+    "contactFormSub": {
+        "message": "message प्राप्त हुआ!"
+    },
+    "contactForm1": {
+        "message": "नाम"
+    },
+    "contactForm2": {
+        "message": "ईमेल"
+    },
+    "contactForm3": {
+        "message": "यहां टाइप करें..."
+    },
+    "contactFormBtn": {
+        "message": "सबमिट करें"
+    }
+}

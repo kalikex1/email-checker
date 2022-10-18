@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Contactar al héroe"
+    },
+    "manifestDescription": {
+        "message": "Verifica cualquier dirección de correo electrónico mientras viajas con esta práctica extensión"
+    },
+    "navTitle": {
+        "message": "Contactar al héroe"
+    },
+    "navShare": {
+        "message": "Compartir"
+    },
+    "navVerification": {
+        "message": "Verificación"
+    },
+    "navSubscribe": {
+        "message": "Suscribirse/Comentarios"
+    },
+    "splashEmailPlacehold": {
+        "message": "Dirección de correo electrónico"
+    },
+    "splashVerifyBtn": {
+        "message": "Verificar"
+    },
+    "splashEmailResultHolder": {
+        "message": "Correo electrónico - Prueba de resultados"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Motivo:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Número de teléfono de EE. UU. únicamente"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Teléfono - Prueba de resultados"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Operador de teléfono:"
+    },
+    "fileLargeFiles": {
+        "message": "Los archivos grandes pueden tardar varios minutos"
+    },
+    "fileContactsFound": {
+        "message": "Contactos encontrados"
+    },
+    "fileUploadHere": {
+        "message": "Subir aquí"
+    },
+    "fileInfoBox": {
+        "message": "Cargue un archivo csv para verificación masiva. Incluya encabezados en el archivo para obtener mejores resultados (es decir, 'Correo electrónico')"
+    },
+    "fileSubmitBtn": {
+        "message": "Limpiar archivo"
+    },
+    "contactThankYou": {
+        "message": "¡Gracias por suscribirte!"
+    },
+    "contactAddEmail": {
+        "message": "¿añadir otro correo electrónico?"
+    },
+    "contactSub1": {
+        "message": "Suscríbete para..."
+    },
+    "contactSub2": {
+        "message": "- Oferta de por vida en Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Manténgase actualizado con los lanzamientos"
+    },
+    "contactSubBtn": {
+        "message": "Suscribirse"
+    },
+    "contactForm": {
+        "message": "Preguntas y Comentarios"
+    },
+    "contactFormSub": {
+        "message": "¡message recibido!"
+    },
+    "contactForm1": {
+        "message": "Nombre"
+    },
+    "contactForm2": {
+        "message": "Correo electrónico"
+    },
+    "contactForm3": {
+        "message": "Escriba aquí..."
+    },
+    "contactFormBtn": {
+        "message": "Enviar"
+    }
+}

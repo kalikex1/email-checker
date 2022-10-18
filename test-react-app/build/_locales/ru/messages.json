@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Связаться с героем"
+    },
+    "manifestDescription": {
+        "message": "Подтверждайте любой адрес электронной почты в дороге с помощью этого удобного расширения"
+    },
+    "navTitle": {
+        "message": "Связаться с героем"
+    },
+    "navShare": {
+        "message": "Поделиться"
+    },
+    "navVerification": {
+        "message": "Проверка"
+    },
+    "navSubscribe": {
+        "message": "Подписаться / оставить отзыв"
+    },
+    "splashEmailPlacehold": {
+        "message": "Адрес электронной почты"
+    },
+    "splashVerifyBtn": {
+        "message": "Подтвердить"
+    },
+    "splashEmailResultHolder": {
+        "message": "Электронная почта – проверка результатов"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Причина:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Только номер телефона в США"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Телефон — результаты теста"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Телефонный оператор:"
+    },
+    "fileLargeFiles": {
+        "message": "Большие файлы могут занять несколько минут"
+    },
+    "fileContactsFound": {
+        "message": "Контакты найдены"
+    },
+    "fileUploadHere": {
+        "message": "Загрузить сюда"
+    },
+    "fileInfoBox": {
+        "message": "Загрузите CSV-файл для массовой проверки. Включите заголовки в файл для достижения наилучших результатов (например, 'Электронная почта')"
+    },
+    "fileSubmitBtn": {
+        "message": "Очистить файл"
+    },
+    "contactThankYou": {
+        "message": "Спасибо за подписку!"
+    },
+    "contactAddEmail": {
+        "message": "добавить другое письмо?"
+    },
+    "contactSub1": {
+        "message": "Подписаться на..."
+    },
+    "contactSub2": {
+        "message": "- Пожизненная сделка с контактным героем +"
+    },
+    "contactSub3": {
+        "message": "- Будьте в курсе релизов"
+    },
+    "contactSubBtn": {
+        "message": "Подписаться"
+    },
+    "contactForm": {
+        "message": "Вопросы и отзывы"
+    },
+    "contactFormSub": {
+        "message": "Сообщение получено!"
+    },
+    "contactForm1": {
+        "message": "Имя"
+    },
+    "contactForm2": {
+        "message": "Электронная почта"
+    },
+    "contactForm3": {
+        "message": "Введите здесь..."
+    },
+    "contactFormBtn": {
+        "message": "Отправить"
+    }
+}

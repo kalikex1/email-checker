@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Contato com Herói"
+    },
+    "manifestDescription": {
+        "message": "Verifique qualquer endereço de e-mail enquanto estiver em trânsito com esta extensão conveniente"
+    },
+    "navTitle": {
+        "message": "Contato com Herói"
+    },
+    "navShare": {
+        "message": "Compartilhar"
+    },
+    "navVerification": {
+        "message": "Verificação"
+    },
+    "navSubscribe": {
+        "message": "Inscrever-se / Feedback"
+    },
+    "splashEmailPlacehold": {
+        "message": "Endereço de e-mail"
+    },
+    "splashVerifyBtn": {
+        "message": "Verificar"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-mail - Teste para resultados"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Motivo:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Somente número de telefone dos EUA"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telefone - Teste para Resultados"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Operadora de telefone:"
+    },
+    "fileLargeFiles": {
+        "message": "Arquivos grandes podem levar vários minutos"
+    },
+    "fileContactsFound": {
+        "message": "Contatos encontrados"
+    },
+    "fileUploadHere": {
+        "message": "Carregar aqui"
+    },
+    "fileInfoBox": {
+        "message": "Faça upload de um arquivo csv para verificação em massa. Inclua cabeçalhos no arquivo para obter melhores resultados (por exemplo, 'E-mail')"
+    },
+    "fileSubmitBtn": {
+        "message": "Limpar arquivo"
+    },
+    "contactThankYou": {
+        "message": "Obrigado por se inscrever!"
+    },
+    "contactAddEmail": {
+        "message": "adicionar outro email?"
+    },
+    "contactSub1": {
+        "message": "Inscrever-se para..."
+    },
+    "contactSub2": {
+        "message": "- Oferta vitalícia no Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Fique por dentro dos Lançamentos"
+    },
+    "contactSubBtn": {
+        "message": "Inscrever-se"
+    },
+    "contactForm": {
+        "message": "Perguntas e comentários"
+    },
+    "contactFormSub": {
+        "message": "mensagem recebida!"
+    },
+    "contactForm1": {
+        "message": "Nome"
+    },
+    "contactForm2": {
+        "message": "E-mail"
+    },
+    "contactForm3": {
+        "message": "Digite aqui ..."
+    },
+    "contactFormBtn": {
+        "message": "Enviar"
+    }
+}

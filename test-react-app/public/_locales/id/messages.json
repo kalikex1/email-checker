@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Hubungi Pahlawan"
+    },
+    "manifestDescription": {
+        "message": "Verifikasi alamat email apa pun saat bepergian dengan ekstensi praktis ini"
+    },
+    "navTitle": {
+        "message": "Hubungi Pahlawan"
+    },
+    "navShare": {
+        "message": "Bagikan"
+    },
+    "navVerification": {
+        "message": "Verifikasi"
+    },
+    "navSubscribe": {
+        "message": "Berlangganan / Umpan Balik"
+    },
+    "splashEmailPlacehold": {
+        "message": "Alamat Email"
+    },
+    "splashVerifyBtn": {
+        "message": "Verifikasi"
+    },
+    "splashEmailResultHolder": {
+        "message": "Email - Tes Untuk Hasil"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Alasan:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Hanya Nomor Telepon AS"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telepon - Tes Untuk Hasil"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Operator Telepon:"
+    },
+    "fileLargeFiles": {
+        "message": "File Besar Mungkin Membutuhkan Beberapa Menit"
+    },
+    "fileContactsFound": {
+        "message": "Kontak Ditemukan"
+    },
+    "fileUploadHere": {
+        "message": "Unggah Disini"
+    },
+    "fileInfoBox": {
+        "message": "Unggah file csv untuk verifikasi massal. Sertakan header pada file untuk hasil terbaik (yaitu 'Email')"
+    },
+    "fileSubmitBtn": {
+        "message": "Bersihkan File"
+    },
+    "contactThankYou": {
+        "message": "Terima kasih telah berlangganan!"
+    },
+    "contactAddEmail": {
+        "message": "tambah email lain?"
+    },
+    "contactSub1": {
+        "message": "Berlangganan untuk..."
+    },
+    "contactSub2": {
+        "message": "- Kesepakatan Seumur Hidup untuk Kontak Hero +"
+    },
+    "contactSub3": {
+        "message": "- Tetap up to date dengan Rilis"
+    },
+    "contactSubBtn": {
+        "message": "Berlangganan"
+    },
+    "contactForm": {
+        "message": "Pertanyaan & Umpan Balik"
+    },
+    "contactFormSub": {
+        "message": "pesan Diterima !"
+    },
+    "contactForm1": {
+        "message": "Nama"
+    },
+    "contactForm2": {
+        "message": "Email"
+    },
+    "contactForm3": {
+        "message": "Ketik Di Sini ..."
+    },
+    "contactFormBtn": {
+        "message": "Kirim"
+    }
+}

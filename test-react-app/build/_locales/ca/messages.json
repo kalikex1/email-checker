@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Contacta amb Hero"
+    },
+    "manifestDescription": {
+        "message": "Verifiqueu qualsevol adreça de correu electrònic mentre esteu en moviment amb aquesta convenient extensió"
+    },
+    "navTitle": {
+        "message": "Contacta amb Hero"
+    },
+    "navShare": {
+        "message": "Comparteix"
+    },
+    "navVerification": {
+        "message": "Verificació"
+    },
+    "navSubscribe": {
+        "message": "Subscriure's / Comentaris"
+    },
+    "splashEmailPlacehold": {
+        "message": "Adreça de correu electrònic"
+    },
+    "splashVerifyBtn": {
+        "message": "Verificar"
+    },
+    "splashEmailResultHolder": {
+        "message": "Correu electrònic - Prova de resultats"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Motiu:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Només número de telèfon dels EUA"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telèfon - Prova de resultats"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Operador de telèfon:"
+    },
+    "fileLargeFiles": {
+        "message": "Els fitxers grans poden trigar uns quants minuts"
+    },
+    "fileContactsFound": {
+        "message": "S'han trobat contactes"
+    },
+    "fileUploadHere": {
+        "message": "Penja aquí"
+    },
+    "fileInfoBox": {
+        "message": "Pengeu un fitxer CSV per a la verificació massiva. Incloeu capçaleres al fitxer per obtenir els millors resultats (és a dir, 'Correu electrònic')"
+    },
+    "fileSubmitBtn": {
+        "message": "Neteja el fitxer"
+    },
+    "contactThankYou": {
+        "message": "Gràcies per subscriure't!"
+    },
+    "contactAddEmail": {
+        "message": "afegir un altre correu electrònic?"
+    },
+    "contactSub1": {
+        "message": "Subscriu-te a..."
+    },
+    "contactSub2": {
+        "message": "- Oferta de tota la vida a Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Estigueu al dia de les versions"
+    },
+    "contactSubBtn": {
+        "message": "Subscriu-te"
+    },
+    "contactForm": {
+        "message": "Preguntes i comentaris"
+    },
+    "contactFormSub": {
+        "message": "Missatge rebut!"
+    },
+    "contactForm1": {
+        "message": "Nom"
+    },
+    "contactForm2": {
+        "message": "Correu electrònic"
+    },
+    "contactForm3": {
+        "message": "Escriu aquí..."
+    },
+    "contactFormBtn": {
+        "message": "Envia"
+    }
+}

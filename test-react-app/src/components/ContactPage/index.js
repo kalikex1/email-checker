@@ -1,3 +1,4 @@
+/*global chrome*/
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -70,11 +71,11 @@ function ContactPage() {
                 <>
                 <div className='subbedBox'>
                     <h2>
-                        Thank you for subscribing! 
+                        {chrome.i18n.getMessage('contactThankYou')}
                     </h2>
-                    <p onClick={()=> {setShowMessage(false); localStorage.removeItem('didSub')}}>add another email?</p>
+                        <p onClick={() => { setShowMessage(false); localStorage.removeItem('didSub') }}>{chrome.i18n.getMessage('contactAddEmail')}</p>
                     <div className="navRight">
-                        <h5>Share: </h5>
+                        <h5>{chrome.i18n.getMessage('navShare')}: </h5>
                             <div className="shareHolder">
                                 <img onClick={(e) => { window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={fb} alt="fb" />
                                 <img onClick={(e) => { window.open("https://twitter.com/intent/tweet?text=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={tw} alt="tw" />
@@ -89,14 +90,14 @@ function ContactPage() {
                 <>
                     <div className='subBox'>
                         <div className='topInfo'>
-                            <h3> Subscribe for...</h3>
-                            <p>- Lifetime Deal on Contact Hero +</p>
-                            <p>- Stay up to date with Releases</p>
+                            <h3>{chrome.i18n.getMessage('contactSub1')}</h3>
+                            <p>{chrome.i18n.getMessage('contactSub2')}</p>
+                            <p>{chrome.i18n.getMessage('contactSub3')}</p>
                         </div>
                         <div className='email-Input'>
                             <form ref={form1} onSubmit={(e)=> {e.preventDefault(); newSub()}}>
                                 <input required name='user_email' type='email' onChange={(e)=> {setSubEmail(e.target.value)}}></input>
-                                <button type='submit'>Subscribe</button>
+                                <button type='submit'>{chrome.i18n.getMessage('contactSubBtn')}</button>
                             </form>
                         </div>
                     </div>
@@ -104,13 +105,13 @@ function ContactPage() {
             )}
 
             <div className='contactForm'>
-                <h3>Questions & Feedback</h3>
-                {showFeedback && ( <p>Message Received !</p> )}
+                <h3>{chrome.i18n.getMessage('contactForm')}</h3>
+                {showFeedback && (<p>{chrome.i18n.getMessage('contactFormSub')}</p> )}
                 <form ref={form2} onSubmit={(e)=> {e.preventDefault(); newMessage()}}>
-                    <input name='user_name' value={eName} required type='text' placeholder='Name' onChange={(e) => { setEName(e.target.value) }}></input>
-                    <input name='user_email' value={email} required type='email' placeholder='Email' onChange={(e)=> {setEmail(e.target.value)}}></input>
-                    <textarea name='message' value={message} required placeholder='Type Here ...' onChange={(e) => { setMessage(e.target.value) }}></textarea>
-                    <button>Submit</button>
+                    <input name='user_name' value={eName} required type='text' placeholder={chrome.i18n.getMessage('contactForm1')} onChange={(e) => { setEName(e.target.value) }}></input>
+                    <input name='user_email' value={email} required type='email' placeholder={chrome.i18n.getMessage('contactForm2')} onChange={(e)=> {setEmail(e.target.value)}}></input>
+                    <textarea name='message' value={message} required placeholder={chrome.i18n.getMessage('contactForm3')} onChange={(e) => { setMessage(e.target.value) }}></textarea>
+                    <button>{chrome.i18n.getMessage('contactFormBtn')}</button>
                 </form>
             </div>
         </div>

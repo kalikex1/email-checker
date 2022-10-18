@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "Kontakt helten"
+    },
+    "manifestDescription": {
+        "message": "Bekræft enhver e-mailadresse, mens du er på farten med denne praktiske udvidelse"
+    },
+    "navTitle": {
+        "message": "Kontakt helten"
+    },
+    "navShare": {
+        "message": "Del"
+    },
+    "navVerification": {
+        "message": "Bekræftelse"
+    },
+    "navSubscribe": {
+        "message": "Abonner / Feedback"
+    },
+    "splashEmailPlacehold": {
+        "message": "E-mail-adresse"
+    },
+    "splashVerifyBtn": {
+        "message": "Bekræft"
+    },
+    "splashEmailResultHolder": {
+        "message": "E-mail - Test for resultater"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Årsag:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "Kun amerikansk telefonnummer"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Telefon - Test for resultater"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Telefonoperatør:"
+    },
+    "fileLargeFiles": {
+        "message": "Store filer kan tage flere minutter"
+    },
+    "fileContactsFound": {
+        "message": "Kontaktpersoner fundet"
+    },
+    "fileUploadHere": {
+        "message": "Upload her"
+    },
+    "fileInfoBox": {
+        "message": "Upload en csv-fil til massebekræftelse. Inkluder overskrifter i filen for de bedste resultater (dvs. 'E-mail')"
+    },
+    "fileSubmitBtn": {
+        "message": "Rens fil"
+    },
+    "contactThankYou": {
+        "message": "Tak, fordi du abonnerer!"
+    },
+    "contactAddEmail": {
+        "message": "tilføj endnu en e-mail?"
+    },
+    "contactSub1": {
+        "message": "Abonner på..."
+    },
+    "contactSub2": {
+        "message": "- Livsvarig aftale på Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Hold dig opdateret med udgivelser"
+    },
+    "contactSubBtn": {
+        "message": "Abonner"
+    },
+    "contactForm": {
+        "message": "Spørgsmål og feedback"
+    },
+    "contactFormSub": {
+        "message": "Besked modtaget !"
+    },
+    "contactForm1": {
+        "message": "Navn"
+    },
+    "contactForm2": {
+        "message": "E-mail"
+    },
+    "contactForm3": {
+        "message": "Skriv her ..."
+    },
+    "contactFormBtn": {
+        "message": "Send"
+    }
+}

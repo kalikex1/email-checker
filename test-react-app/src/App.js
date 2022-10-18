@@ -1,8 +1,11 @@
+/*global chrome*/
+
 import React, { useState, useEffect } from "react";
 import { Route, Switch, NavLink } from "react-router-dom";
 
-import SplashPage from './components/SplashPage'
+import { useTranslation } from 'react-i18next'
 
+import SplashPage from './components/SplashPage'
 
 
 import logo from './images/yes.png'
@@ -17,8 +20,10 @@ import ContactPage from "./components/ContactPage";
 
 
 function App() {
+  const { t } = useTranslation()
 
   const [selected, setSelected] = useState(1)
+
 
   function reactiveMenuStyle(selectedTab){
     if(selected === selectedTab) return 'Selected'
@@ -33,10 +38,11 @@ function App() {
             <div className="navBar">
               <div className="navLeft">
                 <img src={logo} alt=""></img>
-                <h4>Contact Hero</h4>
+              <h4>{ chrome.i18n.getMessage('navTitle') }</h4>
               </div>
               <div className="navRight">
-                <h5>Share: </h5>
+                <h5>{chrome.i18n.getMessage('navShare')}</h5>
+                {/* <p>{}</p> */}
                 <div className="shareHolder">
                   <img onClick={(e) => { window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={fb} alt="fb"/>
                   <img onClick={(e) => { window.open("https://twitter.com/intent/tweet?text=https%3A//chrome.google.com/webstore/detail/contact-hero/pbghlnngciboeibjckhadpjhgpnhjcid?hl=en%26authuser=0", '_blank') }} src={tw} alt="tw"/>
@@ -46,9 +52,9 @@ function App() {
               </div>
             </div>
             <div className="pageSelector">
-              <h5 className={reactiveMenuStyle(1)} onClick={()=>{setSelected(1)}}>Verification</h5>
+              <h5 className={reactiveMenuStyle(1)} onClick={() => { setSelected(1) }}>{chrome.i18n.getMessage('navVerification')}</h5>
               {/* <h5 className={reactiveMenuStyle(2)} onClick={() => { setSelected(2) }}>Contact Finder</h5> */}
-              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>Subscribe / Feedback</h5>
+              <h5 className={reactiveMenuStyle(3)} onClick={() => { setSelected(3) }}>{chrome.i18n.getMessage('navSubscribe')}</h5>
             </div>
             {selected === 1 && (
               < SplashPage />

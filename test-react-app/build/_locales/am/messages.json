@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "ጀግናን ያግኙ"
+    },
+    "manifestDescription": {
+        "message": "በጉዞ ላይ ሳሉ ማንኛውንም የኢሜል አድራሻ በዚህ ምቹ ቅጥያ ያረጋግጡ"
+    },
+    "navTitle": {
+        "message": "ጀግናን ያግኙ"
+    },
+    "navShare": {
+        "message": "አጋራ"
+    },
+    "navVerification": {
+        "message": "ማረጋገጫ"
+    },
+    "navSubscribe": {
+        "message": "ለደንበኝነት ይመዝገቡ / ግብረመልስ"
+    },
+    "splashEmailPlacehold": {
+        "message": "ኢሜል አድራሻ"
+    },
+    "splashVerifyBtn": {
+        "message": "አረጋግጥ"
+    },
+    "splashEmailResultholder": {
+        "message": "ኢሜል - የውጤት ሙከራ"
+    },
+    "splashEmailReasonLabel": {
+        "message": "ምክንያት:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "የአሜሪካ ስልክ ቁጥር ብቻ"
+    },
+    "splashPhoneResultholder": {
+        "message": "ስልክ - የውጤት ሙከራ"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "ስልክ አቅራቢ:"
+    },
+    "fileLargeFiles": {
+        "message": "ትላልቅ ፋይሎች ብዙ ደቂቃዎችን ሊወስዱ ይችላሉ"
+    },
+    "fileContactsFound": {
+        "message": "እውቂያዎች ተገኝተዋል"
+    },
+    "fileUploadHere": {
+        "message": "እዚህ ስቀል"
+    },
+    "fileInfoBox": {
+        "message": "ለጅምላ ማረጋገጫ የ csv ፋይል ስቀል። ለተሻለ ውጤት (ማለትም 'ኢሜል') በፋይሉ ላይ አርዕስት አካትት።"
+    },
+    "fileSubmitBtn": {
+        "message": "ፋይል አጽዳ"
+    },
+    "contactThankYou": {
+        "message": "ለደንበኝነት ስለተመዘገቡ እናመሰግናለን!"
+    },
+    "contactAddEmail": {
+        "message": "ሌላ ኢሜይል ጨምር?"
+    },
+    "contactSub1": {
+        "message": "Subscribe for..."
+    },
+    "contactSub2": {
+        "message": "- በእውቅያ ጀግና ላይ የዕድሜ ልክ ስምምነት +"
+    },
+    "contactSub3": {
+        "message": "- ከተለቀቁት ጋር እንደተዘመኑ ይቆዩ"
+    },
+    "contactSubBtn": {
+        "message": "ተመዝገብ"
+    },
+    "contactForm": {
+        "message": "ጥያቄዎች እና ግብረመልስ"
+    },
+    "contactFormSub": {
+        "message": "መልእክት ደርሷል!"
+    },
+    "contactForm1": {
+        "message": "ስም"
+    },
+    "contactForm2": {
+        "message": "ኢሜል"
+    },
+    "contactForm3": {
+        "message": "እዚህ ተይብ..."
+    },
+    "contactFormBtn": {
+        "message": "አስረክብ"
+    }
+}

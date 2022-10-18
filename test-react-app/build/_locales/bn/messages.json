@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "হিরোর সাথে যোগাযোগ করুন"
+    },
+    "manifestDescription": {
+        "message": "এই সুবিধাজনক এক্সটেনশনের সাথে যেতে যেতে যেকোনো ইমেল ঠিকানা যাচাই করুন"
+    },
+    "navTitle": {
+        "message": "হিরোর সাথে যোগাযোগ করুন"
+    },
+    "navShare": {
+        "message": "শেয়ার করুন"
+    },
+    "navVerification": {
+        "message": "যাচাইকরণ"
+    },
+    "navSubscribe": {
+        "message": "সাবস্ক্রাইব / প্রতিক্রিয়া"
+    },
+    "splashEmailPlacehold": {
+        "message": "ইমেল ঠিকানা"
+    },
+    "splashVerifyBtn": {
+        "message": "যাচাই করুন"
+    },
+    "splashEmailResultHolder": {
+        "message": "ইমেল - ফলাফলের জন্য পরীক্ষা"
+    },
+    "splashEmailReasonLabel": {
+        "message": "কারণ:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "শুধুমাত্র মার্কিন ফোন নম্বর"
+    },
+    "splashPhoneResultHolder": {
+        "message": "ফোন - ফলাফলের জন্য পরীক্ষা"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "ফোন ক্যারিয়ার:"
+    },
+    "fileLargeFiles": {
+        "message": "বড় ফাইলগুলি কয়েক মিনিট সময় নিতে পারে"
+    },
+    "fileContactsFound": {
+        "message": "পরিচিতি পাওয়া গেছে"
+    },
+    "fileUploadHere": {
+        "message": "এখানে আপলোড করুন"
+    },
+    "fileInfoBox": {
+        "message": "বাল্ক যাচাইয়ের জন্য একটি csv ফাইল আপলোড করুন। সেরা ফলাফলের জন্য ফাইলে শিরোনাম অন্তর্ভুক্ত করুন (যেমন 'ইমেল')"
+    },
+    "fileSubmitBtn": {
+        "message": "ফাইল পরিষ্কার করুন"
+    },
+    "contactThankYou": {
+        "message": "সাবস্ক্রাইব করার জন্য আপনাকে ধন্যবাদ!"
+    },
+    "contactAddEmail": {
+        "message": "আরেকটি ইমেল যোগ করবেন?"
+    },
+    "contactSub1": {
+        "message": "এর জন্য সদস্যতা নিন..."
+    },
+    "contactSub2": {
+        "message": "- কন্টাক্ট হিরো + এ লাইফটাইম ডিল"
+    },
+    "contactSub3": {
+        "message": "- রিলিজের সাথে আপ টু ডেট থাকুন"
+    },
+    "contactSubBtn": {
+        "message": "সাবস্ক্রাইব করুন"
+    },
+    "contactForm": {
+        "message": "প্রশ্ন ও প্রতিক্রিয়া"
+    },
+    "contactFormSub": {
+        "message": "বার্তা গৃহীত হয়েছে!"
+    },
+    "contactForm1": {
+        "message": "নাম"
+    },
+    "contactForm2": {
+        "message": "ইমেল"
+    },
+    "contactForm3": {
+        "message": "এখানে টাইপ করুন..."
+    },
+    "contactFormBtn": {
+        "message": "জমা দিন"
+    }
+}

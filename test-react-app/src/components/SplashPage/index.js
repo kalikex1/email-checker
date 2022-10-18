@@ -1,3 +1,4 @@
+/*global chrome*/
 import React, { useEffect, useState } from 'react';
 import FileUpload from '../FileUpload';
 import './SplashPage.css'
@@ -89,9 +90,10 @@ function SplashPage() {
                 <div className='emailBox'>
                         <div className='eInput'>
                             <form onSubmit={(e) => singleSubmit(e)}>
-                                <input required type="email" placeholder="Email Address" onChange={(e) => { setSingleInput(e.target.value) }} />
+                            <input required type="email" placeholder={chrome.i18n.getMessage('splashEmailPlacehold')} onChange={(e) => { setSingleInput(e.target.value) }} />
                                 {/* <div onClick={singleSubmit}>Verify</div> */}
-                                <button type='submit'>Verify</button>
+                                {/* {chrome.i18n.getMessage('navShare')} */}
+                            <button type='submit'>{chrome.i18n.getMessage('splashVerifyBtn')}</button>
                             </form>
                         </div>
                         <div className='eResults'>
@@ -100,8 +102,8 @@ function SplashPage() {
                             )}
                             {!eLoad && (
                                 <>
-                                    <p className={resultClass}>{singleResult?.Result ? singleResult?.Input + ' : ' + singleResult?.Result : 'Email - Test For Results'}</p>
-                                    <p>Reason: {singleResult?.Reason ? singleResult?.Reason : 'N/A'}</p>
+                                <p className={resultClass}>{singleResult?.Result ? singleResult?.Input + ' : ' + singleResult?.Result : chrome.i18n.getMessage('splashEmailResultHolder')}</p>
+                                <p>{chrome.i18n.getMessage('splashEmailReasonLabel')} {singleResult?.Reason ? singleResult?.Reason : 'N/A'}</p>
                                 </>
                             )}
                         </div>
@@ -114,14 +116,14 @@ function SplashPage() {
                                 international
                                 withCountryCallingCode
                                 countryCallingCodeEditable={false}
-                                placeholder='US Phone Number Only'
+                                placeholder={chrome.i18n.getMessage('splashPhonePlaceholder')}
                                 defaultCountry="US"
                                 // country='US'
                                 value={value}
                                 onChange={setValue}
                                 required
                             />
-                            <button type='submit'>Verify</button>
+                            <button type='submit'>{chrome.i18n.getMessage('splashVerifyBtn')}</button>
                         </form>
                     </div>
                     <div className='pResults'>
@@ -130,8 +132,8 @@ function SplashPage() {
                         )}
                         {!pLoad && (
                             <>
-                                <p className={phoneResultClass}>{valueResult?.Result ? valueResult?.Input + ' : ' + valueResult?.Result : 'Phone - Test For Results'}</p>
-                                <p>Phone Carrier: {valueResult?.Carrier ? valueResult?.Carrier : 'N/A'}</p>
+                                <p className={phoneResultClass}>{valueResult?.Result ? valueResult?.Input + ' : ' + valueResult?.Result : chrome.i18n.getMessage('splashPhoneResultHolder') }</p>
+                                <p>{chrome.i18n.getMessage('splashPhoneCarrierLabel')} {valueResult?.Carrier ? valueResult?.Carrier : 'N/A'}</p>
                             </>
                         )}
                     </div>

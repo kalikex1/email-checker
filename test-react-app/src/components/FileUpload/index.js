@@ -1,3 +1,4 @@
+/*global chrome*/
 import React, { useEffect, useState } from 'react';
 
 import LinearProgress from '@mui/material/LinearProgress'
@@ -49,7 +50,6 @@ function FileUpload(props) {
                 const cleanArr = []
                 let percentCount = 0
                 if (results.data[0]['Email'] || results.data[0]['email']){
-                    console.log(results.data.length, 'emails found - organized')
                     setTotalEmails(results.data.length)
                     for (let i = 0; i < results.data.length; i++){
                         if(results.data[i]['Email']){
@@ -176,8 +176,8 @@ function FileUpload(props) {
             {loading && (
                 <div className='fileLoader'>
                     {/* <img src={loadGif} alt=''></img> */}
-                    <p className='csvTextTop1'>Large Files May Take Several Minutes</p>
-                    <p className='csvTextTop'>{totalEmails} contacts found</p>
+                    <p className='csvTextTop1'>{chrome.i18n.getMessage('fileLargeFiles')}</p>
+                        <p className='csvTextTop'>{totalEmails} {chrome.i18n.getMessage('fileContactsFound')}</p>
                     <div className='csvLoadBottom'>
                         <div className='csvTop'>
                             <LinearProgress variant="buffer" value={percentValue} sx={{width: '200px' }} />
@@ -194,13 +194,13 @@ function FileUpload(props) {
                     <div className="dirtyContainer" onClick={(e)=> handleClick(e)}>
 
                         <img className='uploadIcon' src={fI}></img>
-                        <p>{uploaded?.fName ? uploaded?.fName : 'Upload Here'}</p>
+                            <p>{uploaded?.fName ? uploaded?.fName : chrome.i18n.getMessage('fileUploadHere')}</p>
                     </div>
                     <div className='infoBox'>
                         <p>
-                            Upload a csv file for bulk verification. Include headers on file for best results (i.e. 'Email')
+                            {chrome.i18n.getMessage('fileInfoBox')}
                         </p>
-                        <p className='cleanButton' onClick={(e)=> handleFilter(e)}>Clean File</p>
+                            <p className='cleanButton' onClick={(e) => handleFilter(e)}>{chrome.i18n.getMessage('fileSubmitBtn')}</p>
                     </div>
 
                 </>

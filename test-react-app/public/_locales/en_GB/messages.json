@@ -1,0 +1,93 @@
+{
+    "manifestTitle": {
+        "message": "Contact Hero"
+    },
+    "manifestDescription": {
+        "message": "Verify any email address while on the go with this convenient extension"
+    },
+    "navTitle": {
+        "message": "Contact Hero"
+    },
+    "navShare": {
+        "message": "Share"
+    },
+    "navVerification": {
+        "message": "Verification"
+    },
+    "navSubscribe": {
+        "message": "Subscribe / Feedback"
+    },
+    "splashEmailPlacehold": {
+        "message": "Email Address"
+    },
+    "splashVerifyBtn": {
+        "message": "Verify"
+    },
+    "splashEmailResultHolder": {
+        "message": "Email - Test For Results"
+    },
+    "splashEmailReasonLabel": {
+        "message": "Reason:"
+    },
+    "splashPhonePlaceholder": {
+        "message": "US Phone Number Only"
+    },
+    "splashPhoneResultHolder": {
+        "message": "Phone - Test For Results"
+    },
+    "splashPhoneCarrierLabel": {
+        "message": "Phone Carrier:"
+    },
+    "fileLargeFiles": {
+        "message": "Large Files May Take Several Minutes"
+    },
+    "fileContactsFound": {
+        "message": "Contacts Found"
+    },
+    "fileUploadHere": {
+        "message": "Upload Here"
+    },
+    "fileInfoBox": {
+        "message": "Upload a csv file for bulk verification. Include headers on file for best results (i.e. 'Email')"
+    },
+    "fileSubmitBtn": {
+        "message": "Clean File"
+    },
+    "contactThankYou": {
+        "message": "Thank you for subscribing!"
+    },
+    "contactAddEmail": {
+        "message": "add another email?"
+    },
+    "contactSub1": {
+        "message": "Subscribe for..."
+    },
+    "contactSub2": {
+        "message": "- Lifetime Deal on Contact Hero +"
+    },
+    "contactSub3": {
+        "message": "- Stay up to date with Releases"
+    },
+    "contactSubBtn": {
+        "message": "Subscribe"
+    },
+    "contactForm": {
+        "message": "Questions & Feedback"
+    },
+    "contactFormSub": {
+        "message": "Message Received !"
+    },
+    "contactForm1": {
+        "message": "Name"
+    },
+    "contactForm2": {
+        "message": "Email"
+    },
+    "contactForm3": {
+        "message": "Type Here ..."
+    },
+    "contactFormBtn": {
+        "message": "Submit"
+    }
+    
+}

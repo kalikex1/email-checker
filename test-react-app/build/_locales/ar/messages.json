@@ -1,0 +1,92 @@
+{
+    "manifestTitle": {
+        "message": "الاتصال بالبطل"
+    },
+    "manifestDescription": {
+        "message": "تحقق من أي عنوان بريد إلكتروني أثناء التنقل باستخدام هذا الملحق الملائم"
+    },
+    "navTitle": {
+        "message": "الاتصال بالبطل"
+    } ,
+    "navShare": {
+        "message": "مشاركة"
+    } ,
+    "navVerification": {
+        "message": "التحقق"
+    } ,
+    "navSubscribe": {
+        "message": "اشتراك / ملاحظات"
+    } ,
+    "splashEmailPlacehold": {
+        "message": "عنوان بريد إلكتروني"
+    } ,
+    "splashVerifyBtn": {
+        "message": "تحقق"
+    } ,
+    "splashEmailResultHolder": {
+        "message": "بريد إلكتروني - اختبار النتائج"
+    } ,
+    "splashEmailReasonLabel": {
+        "message": "السبب:"
+    } ,
+    "splashPhonePlaceholder": {
+        "message": "رقم هاتف الولايات المتحدة فقط"
+    } ,
+    "splashPhoneResultHolder": {
+        "message": "الهاتف - اختبار النتائج"
+    } ,
+    "splashPhoneCarrierLabel": {
+        "message": "شركة الهاتف:"
+    } ,
+    "fileLargeFiles": {
+        "message": "قد تستغرق الملفات الكبيرة عدة دقائق"
+    } ,
+    "fileContactsFound": {
+        "message": "تم العثور على جهات اتصال"
+    } ,
+    "fileUploadHere": {
+        "message": "تحميل هنا"
+    } ,
+    "fileInfoBox": {
+        "message": "تحميل ملف csv للتحقق المجمّع. قم بتضمين رؤوس في الملف للحصول على أفضل النتائج (مثل)"
+    } ,
+    "fileSubmitBtn": {
+        "message": "ملف نظيف"
+    } ,
+    "contactThankYou": {
+        "message": "شكرًا لك على الاشتراك!"
+    } ,
+    "contactAddEmail": {
+        "message": "إضافة بريد إلكتروني آخر؟"
+    } ,
+    "contactSub1": {
+        "message": "اشتراك لـ ..."
+    } ,
+    "contactSub2": {
+        "message": "- عرض مدى الحياة على Contact Hero +"
+    } ,
+    "contactSub3": {
+        "message": "- مواكبة أحدث الإصدارات"
+    } ,
+    "contactSubBtn": {
+        "message": "اشتراك"
+    } ,
+    "contactForm": {
+        "message": "أسئلة وتعليقات"
+    } ,
+    "contactFormSub": {
+        "message": "تم استلام الرسالة!"
+    } ,
+    "contactForm1": {
+        "message": "الاسم"
+    } ,
+    "contactForm2": {
+        "message": "بريد إلكتروني"
+    } ,
+    "contactForm3": {
+        "message": "اكتب هنا ..."
+    } ,
+    "contactFormBtn": {
+        "message": "إرسال"
+    }
+}
